@@ -11,6 +11,7 @@
     "gulp-postcss": "8.0.0",
     "gulp-sass": "4.1.0",
     "gulp-sourcemaps": "2.6.5",
+    "node-normalize-scss": "^8.1.2",
     "stylelint": "13.6.1",
     "stylelint-config-htmlacademy": "0.1.4"
   },
@@ -36,5 +37,8 @@
   ],
   "engines": {
     "node": "12.18.2"
+  },
+  "dependencies": {
+    "normalize.scss": "^0.1.0"
   }
 }
