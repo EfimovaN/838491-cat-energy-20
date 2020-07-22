@@ -1,0 +1,38 @@
+.promo {
+  background-color: #65a93c;
+  margin-bottom: 187px;
+}
+
+.promo__wrapper {
+  position: relative;
+  margin: 0 auto;
+  width: 320px;
+  min-height: 305px;
+  padding: 20px;
+  background-image: url("/img/index-background-mobile@1x.jpg");
+  background-position: 0% 0%;
+  background-repeat: no-repeat;
+}
+
+.promo__slogan {
+  margin: 0;
+  padding: 25px 0;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.promo__button {
+  position: absolute;
+  width: 280px;
+  top: 440px;
+}
+
+.promo__wrapper img {
+  position: absolute;
+  left: 20px;
+  top: 165px;
+}
+
+
+

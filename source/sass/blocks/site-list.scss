@@ -1,0 +1,19 @@
+.site-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.site-list__item {
+  margin: 0;
+  text-align: center;
+  
+}
+
+.site-list a {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+  color: inherit;
+  text-transform: uppercase;
+}
