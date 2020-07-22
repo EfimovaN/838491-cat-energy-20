@@ -3,12 +3,10 @@
   margin-bottom: 187px;
 }
 
-.promo__wrapper {
+.promo__container {
   position: relative;
-  margin: 0 auto;
-  width: 320px;
+  padding-top: 20px;
   min-height: 305px;
-  padding: 20px;
   background-image: url("/img/index-background-mobile@1x.jpg");
   background-position: 0% 0%;
   background-repeat: no-repeat;
@@ -28,7 +26,7 @@
   top: 440px;
 }
 
-.promo__wrapper img {
+.promo__container img {
   position: absolute;
   left: 20px;
   top: 165px;
