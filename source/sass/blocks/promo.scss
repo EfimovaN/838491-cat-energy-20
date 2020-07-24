@@ -5,9 +5,9 @@
 
 .promo__container {
   position: relative;
-  padding-top: 20px;
+  padding-top: 21px;
   min-height: 305px;
-  background-image: url("/img/index-background-mobile@1x.jpg");
+  background-image: url("../img/index-background-mobile@1x.jpg");
   background-position: 0% 0%;
   background-repeat: no-repeat;
 }
@@ -21,9 +21,9 @@
 }
 
 .promo__button {
-  position: absolute;
+  position: relative;
   width: 280px;
-  top: 440px;
+  top: 274px;
 }
 
 .promo__container img {
