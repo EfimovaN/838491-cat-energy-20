@@ -1,0 +1,27 @@
+.page-footer {
+  background-color: #F2F2F2;
+}
+
+.page-footer__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.page-footer__logo {
+  padding-top: 39px;
+  min-height: 95px;
+  text-align: center;
+}
+
+.page-footer__social {
+  margin: 0;
+  padding: 0;
+  min-height: 63px;
+  border-top: 1px solid #D9D9D9;
+  border-bottom: 1px solid #D9D9D9;
+}
+
+.page-footer__copyright {
+  min-height: 78px;
+
+}

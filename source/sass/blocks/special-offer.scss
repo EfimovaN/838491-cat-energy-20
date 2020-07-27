@@ -1,0 +1,29 @@
+.special-offer {
+  position: relative;
+  min-height: 289px;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-repeat: no-repeat; 
+}
+
+.special-offer__text {
+  margin: 0 auto;
+  padding-top: 187px;
+  width: 180px;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #ffffff;
+  &:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: 65px;
+    left: 114px;
+    background-image: url("../img/icon-gift.svg");
+    background-repeat: no-repeat; 
+  }
+}
+
