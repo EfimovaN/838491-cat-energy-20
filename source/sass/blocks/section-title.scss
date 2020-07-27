@@ -10,6 +10,14 @@
     padding-top: 5px;
     color: #ffffff;
     text-align: center;
+
+    @media (min-width: $tablet-width) {
+      width: 420px;
+      font-size: 60px;
+      line-height: 60px;
+      color: #000000;
+      text-align: left;
+    }
   }
 
   &--catalog {

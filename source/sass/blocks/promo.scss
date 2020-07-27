@@ -2,6 +2,10 @@
   position: relative;
   margin-bottom:  187px;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom:  520px;
+  }
+
   &:after {
     content: "";
     display: block;
@@ -12,7 +16,11 @@
     min-height: 305px;
     background-color: #65a93c;
     z-index: -1;
-  } 
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+  }
 }
 
 .promo__container {
@@ -22,6 +30,11 @@
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-position: 0% 0%;
   background-repeat: no-repeat;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 90px;
+    background-image: none;
+  }
 }
 
 .promo__slogan {
@@ -30,18 +43,38 @@
   text-align: center;
   color: #ffffff;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 15px;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+    color: #000000;
+  }
 }
 
 .promo__button {
   position: relative;
   width: 280px;
   top: 274px;
+
+  @media (min-width: $tablet-width) {
+    padding: 17px 0;
+    width: 245px;
+    font-size: 20px;
+    top: 20px;
+  }
 }
 
 .promo__container img {
   position: absolute;
   left: 20px;
   top: 165px;
+
+  @media (min-width: $tablet-width) {
+    left: 20px;
+    top: 500px;
+  }
 }
 
 
