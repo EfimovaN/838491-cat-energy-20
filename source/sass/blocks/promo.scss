@@ -1,6 +1,18 @@
 .promo {
-  background-color: #65a93c;
-  margin-bottom: 187px;
+  position: relative;
+  margin-bottom:  187px;
+
+  &:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 30%;
+    top: 0;
+    min-height: 305px;
+    background-color: #65a93c;
+    z-index: -1;
+  } 
 }
 
 .promo__container {
