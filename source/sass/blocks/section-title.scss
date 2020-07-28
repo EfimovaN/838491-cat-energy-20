@@ -18,6 +18,13 @@
       color: #000000;
       text-align: left;
     }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 110px;
+      
+
+
+    }
   }
 
   &--catalog {

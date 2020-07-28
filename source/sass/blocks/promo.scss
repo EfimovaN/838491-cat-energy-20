@@ -6,6 +6,10 @@
     margin-bottom:  521px;
   }
 
+  @media (min-width: $desktop-width) {
+    margin-bottom:  69px;
+  }
+
   &:after {
     content: "";
     display: block;
@@ -19,6 +23,18 @@
 
     @media (min-width: $tablet-width) {
       display: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 50%;
+      min-height: 696px;
+      top: -140px;
+      right: 0;
+      background-color: #65a93c;
+      z-index: -5;
     }
   }
 }
@@ -34,6 +50,17 @@
   @media (min-width: $tablet-width) {
     padding-left: 120px;
     background-image: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -140px;
+    padding-left: 190px;
+    padding-top: 105px;
+    min-height: 696px;
+    background-image: url("../img/index-background-desktop@1x.jpg");
+    background-position: 100% 0%;
+    background-repeat: no-repeat;
+    z-index: -1;
   }
 }
 
@@ -51,6 +78,10 @@
     text-align: left;
     color: #000000;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 17px;
+  }
 }
 
 .promo__button {
@@ -64,6 +95,10 @@
     font-size: 20px;
     top: 24px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-top: 4px;
+  }
 }
 
 .promo__container img {
@@ -74,6 +109,11 @@
   @media (min-width: $tablet-width) {
     left: 29px;
     top: 227px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 560px;
+    top: 141px;
   }
 }
 

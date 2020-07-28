@@ -1,8 +1,13 @@
-.logo__image {
-  
-  min-height: 63px;
-
+.logo {
   @media (min-width: $tablet-width) {
-    min-height: 105px;
+    padding-top: 22px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 52px;
+  }
+}
+
+.logo__image {
+  min-height: 63px;
 }
