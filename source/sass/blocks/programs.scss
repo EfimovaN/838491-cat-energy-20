@@ -1,3 +1,11 @@
 .programs {
   padding: 10px 0;
 }
+
+.programs .container {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
+
+}

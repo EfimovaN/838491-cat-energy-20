@@ -10,18 +10,22 @@
     padding: 76px 280px 52px 52px;
   }
 
-  &:last-child {
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    min-height: 374px;
+    padding: 76px 52px 0 52px;
+  }
 
+  &:last-child {
     @media (min-width: $tablet-width) {
-      min-height: 372px;
-      margin-bottom: 30px;
       padding: 76px 315px 52px 52px;
+    }
+
+    @media (min-width: $desktop-width) {
+      padding: 76px 52px 0 52px;
     }
   }
 }
-
-
-
 
 .program-item__title {
   position: relative;
@@ -37,6 +41,10 @@
   @media (min-width: $tablet-width) {
     margin: 0;
     font-size: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-left: 162px;
   }
 
   &:before {
@@ -55,6 +63,13 @@
       height: 200px;
       top: 15px;
       left: 395px;
+    }
+
+    @media (min-width: $desktop-width) {
+      width: 100px;
+      height: 100px;
+      top: -29px;
+      left: -162px;
     }
   }
 
@@ -81,6 +96,13 @@
         top: 5px;
         left: 424px;
       }
+
+      @media (min-width: $desktop-width) {
+        width: 70px;
+        height: 97px;
+        top: -35px;
+        left: -148px;
+      }
     }
   }
 
@@ -98,6 +120,13 @@
         top: 59px;
         left: 360px;
       }
+
+      @media (min-width: $desktop-width) {
+        width: 134px;
+        height: 56px;
+        top: -7px;
+        left: -180px;
+      }
     }
   }
 }
@@ -112,6 +141,10 @@
     font-size: 16px;
     line-height: 24px;
     border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 74px 0 5px;
   }
 }
 
