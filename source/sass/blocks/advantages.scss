@@ -15,11 +15,13 @@
     display: flex;
     flex-wrap: wrap;
     margin-top: 72px;
+    margin-bottom: 0px;
   }
 
   @media (min-width: $desktop-width) {
     flex-wrap: nowrap;
     justify-content: space-between;
+    
   }
 }
 

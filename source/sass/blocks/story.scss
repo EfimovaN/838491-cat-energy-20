@@ -1,15 +1,77 @@
 .story {
+  position: relative;
   background-color: #EAEAEA;
   padding-top: 28px;
   min-height: 705px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: -31px;
+    padding-top: 44px;
+    min-height: 1082px;
+    background-color: #ffffff;
+    z-index: 1;
+  }
+
+  &:after {
+    @media (min-width: $tablet-width) {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100%;
+      min-height: 462px;
+      bottom: 0;
+      left: 0;
+      background: #EAEAEA;
+      z-index: -1;
+    }
+  }
 }
 
 .story__description {
   margin-top: 37px;
   padding-right: 5px;
   font-family: "Arial", sans-serif;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 64px;
+    padding-right: 20px;
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.story__stats {
+  margin: 24px 0 33px;
+
+  @media (min-width: $tablet-width) {
+    margin: 53px 0 0;
+  }
+}
+
+.story__stats-sum {
+  @media (min-width: $tablet-width) {
+    display: block;
+    text-align: right;
+  }
 }
 
 .story__image {
   margin: 0 -20px;
+
+  @media (min-width: $tablet-width) {
+    // position: relative;
+    margin: 51px 0 0 16px;
+    z-index: -1;
+  }
+}
+
+.story__slider {
+  margin: 30px auto 15px;
+  width: 205px;
+
+  @media (min-width: $tablet-width) {
+    margin: 12px auto 15px;
+    width: 570px;
+  }
+ 
 }
