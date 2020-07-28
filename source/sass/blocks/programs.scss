@@ -1,5 +1,9 @@
 .programs {
   padding: 10px 0;
+  
+  @media (min-width: $tablet-width) {
+    margin-bottom: 5px;
+  }
 }
 
 .programs .container {
