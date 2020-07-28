@@ -3,7 +3,7 @@
   margin-bottom:  187px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom:  520px;
+    margin-bottom:  521px;
   }
 
   &:after {
@@ -32,7 +32,7 @@
   background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
-    margin-left: 90px;
+    padding-left: 120px;
     background-image: none;
   }
 }
@@ -62,7 +62,7 @@
     padding: 17px 0;
     width: 245px;
     font-size: 20px;
-    top: 20px;
+    top: 24px;
   }
 }
 
@@ -72,8 +72,8 @@
   top: 165px;
 
   @media (min-width: $tablet-width) {
-    left: 20px;
-    top: 500px;
+    left: 29px;
+    top: 227px;
   }
 }
 

@@ -32,7 +32,6 @@
     border-bottom: 1px solid #E6E6E6; 
 
     @media (min-width: $tablet-width) {
-      padding: 45px 0;
       border: none;
     }
   }
@@ -52,6 +51,6 @@
 
   @media (min-width: $desktop-width) {
     font-size: 20px;
-    color: #ffffff;
+    color: #d12a2a;
   }
 } 
