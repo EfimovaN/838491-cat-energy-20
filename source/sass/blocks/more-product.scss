@@ -8,6 +8,10 @@
     min-height: 429px;
     border: 1px solid #D9D9D9;
   }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+  }
 }
 
 .more-product__title {

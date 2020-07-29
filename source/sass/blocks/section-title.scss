@@ -32,4 +32,8 @@
     margin: 0 -20px;
     padding: 26px 20px 40px;
   }
+
+  @media (min-width: $desktop-width) {
+    padding: 48px 20px 18px; 
+  }
 }
