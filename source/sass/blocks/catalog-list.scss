@@ -118,6 +118,13 @@
 
 .catalog__more-product {
   margin: 0 -20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0;
+    position: relative;
+    top: -490px;
+    left: 384px;
+  }
 }
 
 
