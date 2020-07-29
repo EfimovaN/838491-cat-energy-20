@@ -7,7 +7,7 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-bottom:  69px;
+    margin-bottom:  72px;
   }
 
   &:after {
@@ -30,7 +30,7 @@
       display: block;
       position: absolute;
       width: 50%;
-      min-height: 696px;
+      min-height: 693px;
       top: -140px;
       right: 0;
       background-color: #65a93c;
@@ -48,7 +48,7 @@
   background-repeat: no-repeat;
 
   @media (min-width: $tablet-width) {
-    padding-left: 120px;
+    padding-left: 117px;
     background-image: none;
   }
 
@@ -56,7 +56,7 @@
     margin-top: -140px;
     padding-left: 190px;
     padding-top: 105px;
-    min-height: 696px;
+    min-height: 693px;
     background-image: url("../img/index-background-desktop@1x.jpg");
     background-position: 100% 0%;
     background-repeat: no-repeat;
@@ -72,15 +72,11 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    margin-top: 15px;
+    margin-top: 16px;
     font-size: 20px;
     line-height: 20px;
     text-align: left;
     color: #000000;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-top: 17px;
   }
 }
 
@@ -90,21 +86,23 @@
   top: 274px;
 
   @media (min-width: $tablet-width) {
-    padding: 17px 0;
-    width: 245px;
+    padding: 18px 0;
+    width: 244px;
     font-size: 20px;
     top: 24px;
+    left: -5px;
   }
 
   @media (min-width: $desktop-width) {
-    margin-top: 4px;
+    top: 26px;
+    left: 0;
   }
 }
 
 .promo__container img {
   position: absolute;
   left: 20px;
-  top: 165px;
+  top: 166px;
 
   @media (min-width: $tablet-width) {
     left: 29px;
@@ -112,8 +110,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    left: 560px;
-    top: 141px;
+    left: 558px;
+    top: 140px;
   }
 }
 

@@ -45,12 +45,9 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
+    padding-top: 5px;
     font-size: 20px;
     line-height: 25px;
-  }
-
-  @media (min-width: $desktop-width) {
-    padding-top: 5px;
   }
 }
 
@@ -58,7 +55,9 @@
   margin: 0;
   width: 140px;
   font-family: "Arial", sans-serif;
+  font-size: 14px;
   line-height: 20px;
+  
 
   @media (min-width: $tablet-width) {
     margin-top: 5px;
@@ -74,9 +73,13 @@
 }
 
 .contacts__city {
-  display: block;
-  margin-top: 20px;
+  @media (min-width: $tablet-width) {
+    display: block;
+    margin-top: 20px;
+  }
 }
+
+  
 
 .contacts__map {
   position: relative;
