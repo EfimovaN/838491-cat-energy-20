@@ -9,6 +9,11 @@
     background-image: url("../img/gift-photo-tablet@1x.jpg");
   }
 
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    min-height: 289px;
+    background-image: url("../img/gift-photo-desktop@1x.jpg");
+  }
 }
 
 .special-offer__text {
@@ -26,6 +31,13 @@
     padding-top: 72px;
     text-align: left;
   }
+
+  @media (min-width: $desktop-width) {
+    margin: 0 auto;
+    padding-top: 187px;
+    width: 180px;
+    text-align: center;
+  }
   
   &:before {
     content: "";
@@ -40,6 +52,11 @@
     
     @media (min-width: $tablet-width) {
       left: 90px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 65px;
+      left: 96px;
     }
   }
 }
