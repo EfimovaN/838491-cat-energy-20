@@ -12,8 +12,10 @@
   }
 
   @media (min-width: $desktop-width) {
+    position: relative;
     width: 478px;
     padding-top: 27px;
+    z-index: 2;
   }
 }
 
@@ -55,3 +57,9 @@
     color: #ffffff;
   }
 } 
+
+.site-list--inner a {
+  @media (min-width: $desktop-width) {
+    color: inherit;
+  }
+}
