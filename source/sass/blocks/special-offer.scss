@@ -3,6 +3,12 @@
   min-height: 289px;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat; 
+
+  @media (min-width: $tablet-width) {
+    min-height: 200px;
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+  }
+
 }
 
 .special-offer__text {
@@ -14,6 +20,13 @@
   line-height: 20px;
   text-align: center;
   color: #ffffff;
+  
+  @media (min-width: $tablet-width) {
+    margin-right: 105px;
+    padding-top: 72px;
+    text-align: left;
+  }
+  
   &:before {
     content: "";
     display: block;
@@ -23,7 +36,11 @@
     top: 65px;
     left: 114px;
     background-image: url("../img/icon-gift.svg");
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
+    
+    @media (min-width: $tablet-width) {
+      left: 90px;
+    }
   }
 }
 
