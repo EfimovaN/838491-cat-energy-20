@@ -1,9 +1,8 @@
 .main-nav {
-  
-  // display: flex;
-  // justify-content: space-between;
-  // align-items: center;
-  // padding: 10px 0 15px;
+  @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .main-nav__toggle {
@@ -17,9 +16,9 @@
   // top: -42px;
   background-image: url("../img/icon-close.svg");
   background-repeat: no-repeat;
- 
+
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
 }
 
-.main-nav__wrapper {
-  margin: 0 -20px;
-}

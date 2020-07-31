@@ -6,14 +6,34 @@
   line-height: 36px;
   color: #000000;
 
+  @media (min-width: $tablet-width) {
+    font-size: 60px;
+    line-height: 60px;
+    text-align: left;
+  }
+
   &--promo {
     padding-top: 5px;
     color: #ffffff;
     text-align: center;
+
+    @media (min-width: $tablet-width) {
+      width: 420px;
+      color: #000000;
+      text-align: left;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-top: 112px;
+    }
   }
 
   &--catalog {
     margin: 0 -20px;
-    padding: 26px 20px 40px;
+    padding: 27px 20px 40px;
+
+    @media (min-width: $desktop-width) {
+      padding: 48px 20px 18px; 
+    }
   }
 }

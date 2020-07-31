@@ -1,0 +1,26 @@
+.story-slider__image {
+  margin: 0 -20px;
+
+  @media (min-width: $tablet-width) {
+    margin: 51px 0 0 16px;
+    z-index: -1;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: -44px -40px 0 0;
+  }
+}
+
+.story-slider__control {
+  margin: 30px auto 15px;
+  width: 205px; 
+
+  @media (min-width: $tablet-width) {
+    margin: 12px auto 15px;
+    width: 570px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 33px 0 0 auto;
+  }
+}

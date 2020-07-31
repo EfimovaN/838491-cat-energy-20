@@ -2,6 +2,14 @@
   position: relative;
   margin-bottom:  187px;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom:  521px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom:  72px;
+  }
+
   &:after {
     content: "";
     display: block;
@@ -11,8 +19,24 @@
     top: 0;
     min-height: 305px;
     background-color: #65a93c;
-    z-index: -1;
-  } 
+    z-index: -3;
+
+    @media (min-width: $tablet-width) {
+      display: none;
+    }
+
+    @media (min-width: $desktop-width) {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 50%;
+      min-height: 694px;
+      top: -1px;
+      right: 0;
+      background-color: #65a93c;
+      z-index: -3;
+    }
+  }
 }
 
 .promo__container {
@@ -22,6 +46,23 @@
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-position: 0% 0%;
   background-repeat: no-repeat;
+  z-index: -2;
+  
+  @media (min-width: $tablet-width) {
+    padding-left: 117px;
+    background-image: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-top: -140px;
+    padding-left: 190px;
+    padding-top: 105px;
+    min-height: 693px;
+    background-image: url("../img/index-background-desktop@1x.jpg");
+    background-position: 100% 0%;
+    background-repeat: no-repeat;
+    z-index: -2;
+  }
 }
 
 .promo__slogan {
@@ -30,18 +71,51 @@
   text-align: center;
   color: #ffffff;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 16px;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+    color: #000000;
+  }
 }
 
 .promo__button {
   position: relative;
   width: 280px;
   top: 274px;
+
+  @media (min-width: $tablet-width) {
+    padding: 18px 0;
+    width: 244px;
+    font-size: 20px;
+    top: 24px;
+    left: -5px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 26px;
+    left: 0;
+  }
 }
 
 .promo__container img {
   position: absolute;
   left: 20px;
-  top: 165px;
+  top: 166px;
+  z-index: -1;
+  
+
+  @media (min-width: $tablet-width) {
+    left: 29px;
+    top: 227px;
+  }
+
+  @media (min-width: $desktop-width) {
+    left: 558px;
+    top: 140px;
+  }
 }
 
 

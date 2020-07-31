@@ -1,3 +1,13 @@
+.logo {
+  @media (min-width: $tablet-width) {
+    padding-top: 22px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 52px;
+  }
+}
+
 .logo__image {
-  min-height: 66px;
+  min-height: 63px;
 }
