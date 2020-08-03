@@ -35,10 +35,101 @@
 
     <main class="page-main">
       <h1 class="visually-hidden">Анкета по подбору программы</h1>
-      <section class="program-selection">
+      <section class="questionnaire">
         <div class="container">
           <h2 class="section-title">Подбор программы</h2>
-          <p class="program-selection__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+          <p class="questionnaire__description">Заполните анкету, и мы подберем программу питания для вашего кота</p>
+          <form class="questionnaire__form questionnaire-form" method="get" action="https://echo.htmlacademy.ru">
+            <fieldset>
+              <legend class="visually-hidden">Исходные данные:</legend>
+              <div class="questionnaire-form__personal-data personal-data">
+                <ul class="personal-data__list">
+                  <li class="personal-data__item">
+                    <label class="personal-data__label" for="cat-name">Имя:*</label>
+                    <input class="personal-data__input" id="cat-name" type="text" name="cat-name" placeholder="Барсик" required>
+                  </li>
+                  <li class="personal-data__item">
+                    <label class="personal-data__label" for="cat-weight">Вес (кг):*</label>
+                    <input class="personal-data__input" id="cat-weight" type="number" name="cat-weight" placeholder="7" required>
+                  </li>
+                  <li class="personal-data__item">
+                    <label class="personal-data__label" for="cat-age">Возраст (лет):</label>
+                    <input class="personal-data__input" id="cat-age" type="number" name="cat-age" placeholder="7">
+                  </li>
+                </ul>
+              </div>
+              <div class="questionnaire-form__select-program select-program">
+                <ul class="select-program__list">
+                  <li class="select-program__item">
+                    <input class="select-program__radio" type="radio" name="programs" value="weight-loss" id="weight-loss" checked>
+                    <label class="select-program__label" for="weight-loss">Похудение</label>
+                  </li>
+                  <li class="select-program__item">
+                    <input class="select-program__radio" type="radio" name="programs" value="weight-gain" id="weight-gain">
+                    <label class="select-program__label" for="weight-gain">Набор массы</label>
+                  </li>
+                  <li class="select-program__item">
+                    <input class="select-program__radio" type="radio" name="programs" value="advice" id="advice">
+                    <label class="select-program__label" for="advice">Не знаю (Нужен ваш совет)</label>
+                  </li>
+                </ul>
+              </div>
+            </fieldset>
+            <fieldset>
+              <legend>Контактные данные (владельца кота)</legend>
+              <div class="questionnaire-form__contact-details contact-details"></div>
+                <ul class="contact-details__list">
+                  <li class="contact-details__item">
+                    <label class="contact-details__label" for="email">E-mail:*</label>
+                    <input class="contact-details__field" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required>
+                    <svg class="contact-details__field-icon contact-details__field-icon--email" width="17" height="17">
+                      <!-- <use xlink:href="#sprite-icon-mail"></use> -->
+                    </svg>
+                  </li>
+                  <li class="contact-details__item">
+                    <label class="contact-details__label" for="phone">Телефон:*</label>
+                    <input class="contact-details__field" type="tel" name="phone" id="phone" placeholder="8 (960) 900-60-90" required>
+                    <svg class="contact-details__field-icon contact-details__field-icon--phone" width="20" height="20">
+                      <!-- <use xlink:href="#sprite-icon-mail"></use> -->
+                    </svg>
+                  </li>
+                </ul>
+            </fieldset>
+            <fieldset>
+              <legend>Комментарии</legend>
+              <div class="questionnaire-form__comments comments">
+                <textarea class="comments__text-area" name="comments" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+              </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>Дополнительно</legend>
+              <div class="questionnaire-form__additionally">
+                <ul class="additionally__list">
+                  <li class="additionally__item">
+                    <input class="additionally__checkbox" type="checkbox" name="sweetener" id="sweetener" checked>
+                    <label class="additionally__label" for="sweetener">Сахарозаменитель</label>
+                  </li>
+                  <li class="additionally__item">
+                    <input class="additionally__checkbox" type="checkbox" name="water" id="water">
+                    <label class="additionally__label" for="water">Питьевая вода</label>
+                  </li>
+                  <li class="additionally__item">
+                    <input class="additionally__checkbox" type="checkbox" name="milk" id="milk">
+                    <label class="additionally__label" for="milk">Молоко</label>
+                  </li>
+                  <li class="additionally__item">
+                    <input class="additionally__checkbox" type="checkbox" name="vitamins" id="vitamins">
+                    <label class="additionally__label" for="vitamins">Витамины</label>
+                  </li>
+                </ul>
+              </div>
+            </fieldset>
+            <div class="questionnaire-form__submit-wrapper">
+              <button class="questionnaire-form__button button" type="submit">Отправить заявку</button>
+              <p class="questionnaire-form__required">* — Обязательные поля</p>
+            </div>
+          </form>
         </div>
       </section>
 
@@ -51,9 +142,8 @@
             </p>
           </div>
         </div>
-
         <div class="contacts__map">
-          <!-- <img src="img/bg-map-mobile@1x.png"> -->
+
         </div>
       </section>
 
