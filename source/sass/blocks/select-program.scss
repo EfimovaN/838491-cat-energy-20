@@ -1,6 +1,6 @@
 .select-program {
-  margin: 24px -20px 26px;
-  padding: 21px 0 7px;
+  margin: 24px -20px 27px;
+  padding: 21px 0 8px;
   border-top: 1px solid #D9D9D9;
   border-bottom: 1px solid #D9D9D9;
 
@@ -20,6 +20,7 @@
   position: relative;
   justify-content: start;
   line-height: 30px;
+  margin-bottom: 12px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 13px;

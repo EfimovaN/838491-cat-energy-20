@@ -1,5 +1,5 @@
 .additionally {
-  margin-bottom: 33px;
+  margin-bottom: 34px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 22px;
@@ -20,6 +20,8 @@
 .additionally li {
   position: relative;
   line-height: 30px;
+  margin-bottom: 13px;
+
 
   @media (min-width: $tablet-width) {
     width: 220px;

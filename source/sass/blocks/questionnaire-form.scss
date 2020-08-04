@@ -31,9 +31,11 @@
 }
 
 .questionnaire-form__wrapper {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
 }
 
 .questionnaire-form ul {
@@ -46,7 +48,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 13px;
+  margin-bottom: 16px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 20px;
