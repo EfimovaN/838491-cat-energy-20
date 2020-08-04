@@ -2,6 +2,12 @@
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
+  border-color: #E7E7E7;
+
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .questionnaire-form fieldset {
@@ -15,6 +21,13 @@
   font-size: 24px;
   line-height: 26px;
   text-transform: none;
+  color: #000000;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 57px;
+    font-size: 36px;
+    line-height: 36px;
+  }
 }
 
 .questionnaire-form ul {
@@ -28,6 +41,10 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 13px;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 20px;
+  }
 }
 
 .questionnaire-form input {
@@ -39,7 +56,14 @@
   line-height: 39px;
   text-transform: uppercase;
   color: #444444;
+  border: 1px solid #E7E7E7;
   
+  @media (min-width: $tablet-width) {
+    font-size: 20px;
+    line-height: 48px;
+    margin-left: 19px;
+    padding-left: 18px;
+  }
 }
 
 .questionnaire-form svg {
@@ -47,9 +71,20 @@
   left: 0px;
 }
 
+.questionnaire-form__submit-wrapper {
+  @media (min-width: $tablet-width) {
+    display: flex;
+    margin-bottom: 51px;
+  }
+}
+
 .questionnaire-form__button {
   width: 100%;
   margin-bottom: 21px;
+
+  @media (min-width: $tablet-width) {
+    width: 282px;
+  }
 }
 
 .questionnaire-form__required {
@@ -60,4 +95,10 @@
   font-size: 14px;
   line-height: 16px;
   text-transform: none;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 62px;
+    padding-top: 18px;
+    font-size: 16px;
+  }
 }

@@ -1,8 +1,17 @@
 .contact-details {
   margin-bottom: 28px;
+
+  @media (min-width: $tablet-width) {
+    margin-top: 20px;
+    margin-bottom: 65px;
+  }
 }
 
 .contact-details input {
   margin-left: 10px;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 17px;
+  }
 }
 

@@ -36,4 +36,13 @@
       padding: 48px 20px 18px; 
     }
   }
+
+  &--form {
+    margin: 28px 20px 0;
+
+    @media (min-width: $tablet-width) {
+      margin: 27px 30px;
+    }
+  }
 }
+

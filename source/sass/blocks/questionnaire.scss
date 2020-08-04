@@ -1,5 +1,7 @@
-.questionnaire {
-  padding-top: 28px;
+.questionnaire .container {
+  @media (min-width: $tablet-width) {
+    padding: 0 67px 0 70px;
+  }
 }
 
 .questionnaire__description {
@@ -7,5 +9,13 @@
   width: 230px;
   padding-top: 23px;
   text-transform: uppercase;
-}
+  color: #000000;
 
+  @media (min-width: $tablet-width) {
+    margin-bottom: 66px;
+    width: 330px;
+    padding-top: 27px;
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
