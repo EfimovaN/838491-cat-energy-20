@@ -10,14 +10,17 @@
     <header class="page-header">
       <div class="container">
         <nav class="main-nav">
-          <a class="logo">
-            <img class="logo__image" src="img/logo-mobile.svg" width="190" height="38" alt="Cat Energy">
+          <a class="logo" href="index.html">
+            <picture>
+              <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+              <img class="logo__image" src="img/logo-mobile.svg" width="190" height="38" alt="Cat Energy">
+            </picture>
           </a>
           <button class="main-nav__toggle visually-hidden" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
           <div class="main-nav__wrapper">
-            <ul class="main-nav__list site-list">
+            <ul class="main-nav__list site-list site-list--inner">
               <li class="site-list__item">
                 <a href="index.html">Главная</a>
               </li>
@@ -61,23 +64,24 @@
               <div class="questionnaire-form__select-program select-program">
                 <ul class="select-program__list">
                   <li class="select-program__item">
-                    <input class="select-program__radio" type="radio" name="programs" value="weight-loss" id="weight-loss" checked>
+                    <input class="select-program__radio visually-hidden" type="radio" name="programs" value="weight-loss" id="weight-loss" checked>
                     <label class="select-program__label" for="weight-loss">Похудение</label>
                   </li>
                   <li class="select-program__item">
-                    <input class="select-program__radio" type="radio" name="programs" value="weight-gain" id="weight-gain">
+                    <input class="select-program__radio visually-hidden" type="radio" name="programs" value="weight-gain" id="weight-gain">
                     <label class="select-program__label" for="weight-gain">Набор массы</label>
                   </li>
                   <li class="select-program__item">
-                    <input class="select-program__radio" type="radio" name="programs" value="advice" id="advice">
+                    <input class="select-program__radio visually-hidden" type="radio" name="programs" value="advice" id="advice">
                     <label class="select-program__label" for="advice">Не знаю (Нужен ваш совет)</label>
                   </li>
                 </ul>
               </div>
             </fieldset>
+
             <fieldset>
               <legend>Контактные данные (владельца кота)</legend>
-              <div class="questionnaire-form__contact-details contact-details"></div>
+              <div class="questionnaire-form__contact-details contact-details">
                 <ul class="contact-details__list">
                   <li class="contact-details__item">
                     <label class="contact-details__label" for="email">E-mail:*</label>
@@ -94,37 +98,40 @@
                     </svg>
                   </li>
                 </ul>
+              </div>
             </fieldset>
+
             <fieldset>
               <legend>Комментарии</legend>
               <div class="questionnaire-form__comments comments">
-                <textarea class="comments__text-area" name="comments" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+                <textarea class="comments__text-area" name="comments" cols="30" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
               </div>
             </fieldset>
 
             <fieldset>
               <legend>Дополнительно</legend>
-              <div class="questionnaire-form__additionally">
+              <div class="questionnaire-form__additionally additionally">
                 <ul class="additionally__list">
                   <li class="additionally__item">
-                    <input class="additionally__checkbox" type="checkbox" name="sweetener" id="sweetener" checked>
+                    <input class="additionally__checkbox visually-hidden" type="checkbox" name="sweetener" id="sweetener" checked>
                     <label class="additionally__label" for="sweetener">Сахарозаменитель</label>
                   </li>
                   <li class="additionally__item">
-                    <input class="additionally__checkbox" type="checkbox" name="water" id="water">
+                    <input class="additionally__checkbox visually-hidden" type="checkbox" name="water" id="water">
                     <label class="additionally__label" for="water">Питьевая вода</label>
                   </li>
                   <li class="additionally__item">
-                    <input class="additionally__checkbox" type="checkbox" name="milk" id="milk">
+                    <input class="additionally__checkbox visually-hidden" type="checkbox" name="milk" id="milk">
                     <label class="additionally__label" for="milk">Молоко</label>
                   </li>
                   <li class="additionally__item">
-                    <input class="additionally__checkbox" type="checkbox" name="vitamins" id="vitamins">
+                    <input class="additionally__checkbox visually-hidden" type="checkbox" name="vitamins" id="vitamins">
                     <label class="additionally__label" for="vitamins">Витамины</label>
                   </li>
                 </ul>
               </div>
             </fieldset>
+
             <div class="questionnaire-form__submit-wrapper">
               <button class="questionnaire-form__button button" type="submit">Отправить заявку</button>
               <p class="questionnaire-form__required">* — Обязательные поля</p>

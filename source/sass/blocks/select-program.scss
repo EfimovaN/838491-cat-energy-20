@@ -1,0 +1,48 @@
+.select-program {
+  margin: 24px -20px 26px;
+  padding: 20px 20px 8px;
+  
+  border-top: 1px solid #D9D9D9;
+  border-bottom: 1px solid #D9D9D9;
+}
+
+.select-program li {
+  position: relative;
+  justify-content: start;
+  line-height: 30px;
+}
+
+.select-program input {
+  margin: 0;
+  padding: 0;
+  flex-grow: 0;
+}
+
+.select-program label {
+  margin-left: 45px;
+}
+
+.select-program__radio + label::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 1px;
+  left: 0px;
+  border-radius: 50%;
+  border: 1px solid #CDCDCD;
+}
+
+.select-program__radio:checked + label::after {
+  content: "";
+  position: absolute;
+  width: 13.5px;
+  height: 13.5px;
+  top: 9px;
+  left: 8px;
+  border-radius: 50%;
+  background-color: #68B738;
+}
+
+
+
