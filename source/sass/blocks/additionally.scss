@@ -4,6 +4,10 @@
   @media (min-width: $tablet-width) {
     margin-bottom: 22px;
   }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 29px;
+  }
 }
 
 .additionally__list {
@@ -11,7 +15,6 @@
     display: flex;
     flex-wrap: wrap;
   }
-  
 }
 
 .additionally li {
@@ -25,9 +28,26 @@
     line-height: 40px;
   }
 
-  &:nth-child(2n) {
-    margin-right: 0;
+  @media (min-width: $desktop-width) {
+    width: 220px;
+    margin-right: 105px;
   }
+
+  &:nth-child(2n) {
+    @media (min-width: $tablet-width) {
+      margin-right: 0;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin-right: 105px;
+    }
+  } 
+
+  &:nth-child(4n) {
+    @media (min-width: $desktop-width) {
+      margin-right: 0;
+    }
+  } 
 }
 
 .additionally label {
