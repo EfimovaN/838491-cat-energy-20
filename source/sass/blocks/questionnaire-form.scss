@@ -65,7 +65,21 @@
   text-transform: uppercase;
   color: #444444;
   border: 1px solid #E7E7E7;
-  
+  outline: none;
+
+  &:hover {
+    border: 1px solid #CDCDCD;
+  }
+
+  &:active,
+  &:focus {
+    border: 2px solid #444444;
+  }
+
+  &:invalid {
+    border: 2px solid #FF8282;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 48px;
