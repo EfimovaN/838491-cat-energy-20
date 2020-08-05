@@ -40,7 +40,12 @@
 
 .select-program label {
   margin-left: 66px;
-  
+  cursor: pointer;
+
+  &:active {
+    opacity: 0.3;
+  }
+
   
   @media (min-width: $tablet-width) {
     margin-left: 87px;
@@ -66,6 +71,11 @@
   @media (min-width: $desktop-width) {
     left: 29px;
   }
+}
+
+.select-program__radio:hover + label:hover::before,
+.select-program__radio:focus + label:hover::before {
+    border-color: #BABABA;
 }
 
 .select-program__radio:checked + label::after {

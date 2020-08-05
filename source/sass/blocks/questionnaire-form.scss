@@ -61,7 +61,7 @@
   padding-left: 15px;
   font-family: inherit;
   font-size: 16px;
-  line-height: 39px;
+  line-height: 40px;
   text-transform: uppercase;
   color: #444444;
   border: 1px solid #E7E7E7;
@@ -86,6 +86,17 @@
     margin-left: 19px;
     padding-left: 18px;
   }
+}
+
+.questionnaire-form input:active + label {
+  opacity: 0.3;
+}
+
+
+.questionnaire-form label {
+  cursor: pointer;
+  user-select: none;
+
 }
 
 .questionnaire-form svg {

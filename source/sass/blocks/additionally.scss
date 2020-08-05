@@ -20,7 +20,7 @@
 .additionally li {
   position: relative;
   line-height: 30px;
-  margin-bottom: 13px;
+  margin-bottom: 12px;
 
 
   @media (min-width: $tablet-width) {
@@ -54,6 +54,11 @@
 
 .additionally label {
   margin-left: 45px;
+  cursor: pointer;
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     margin-left: 59px;
@@ -73,6 +78,11 @@
     width: 40px;
     height: 40px;
   }
+}
+
+.additionally__checkbox:hover + label:hover::before,
+.additionally__checkbox:focus + label:hover::before {
+    border-color: #BABABA;
 }
 
 .additionally__checkbox:checked + label::after {
