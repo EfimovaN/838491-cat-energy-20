@@ -61,21 +61,6 @@
   }
 }
 
-
-
-// .site-list__item a[href] {
-//   @media (min-width: $tablet-width) {
-//     &:hover {
-//       opacity: 0.6;
-//     }
-  
-//     &:active {
-      
-//     }
-//   }
-
-// }
-
 .site-list a {
   font-size: 20px;
   line-height: 24px;
@@ -92,6 +77,21 @@
     font-size: 20px;
   }
 } 
+
+.site-list__item a[href] {
+    @media (min-width: $tablet-width) {
+      &:hover,
+      &:focus {
+        opacity: 60%;
+      }
+    
+      &:active {
+        opacity: 30%;
+      }
+    }
+  
+  }
+
 
 .site-list--main a {
   @media (min-width: $desktop-width) {
