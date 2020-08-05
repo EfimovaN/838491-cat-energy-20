@@ -1,6 +1,7 @@
 .promo {
   position: relative;
   margin-bottom:  187px;
+  z-index: 1;
 
   @media (min-width: $tablet-width) {
     margin-bottom:  521px;

@@ -36,4 +36,17 @@
       padding: 48px 20px 18px; 
     }
   }
+
+  &--form {
+    margin: 28px 0 0;
+
+    @media (min-width: $tablet-width) {
+      margin: 27px -41px;
+    }
+
+    @media (min-width: $desktop-width) {
+      margin: 46px 0px 30px;
+    }
+  }
 }
+
