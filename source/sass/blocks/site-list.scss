@@ -7,43 +7,74 @@
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
-    margin: 0;
+    margin: 0 0 38px;
     width: 440px;
   }
 
   @media (min-width: $desktop-width) {
     position: relative;
+    margin: 72px 0 34px;
     width: 478px;
-    padding-top: 27px;
     z-index: 2;
+  }
+}
+
+.site-list--main .site-list__item--active {
+  @media (min-width: $desktop-width) {
+    border-bottom: 2px solid #ffffff;
   }
 }
 
 .site-list__item {
   margin: 0;
   padding: 20px 0;
-  min-height: 66px;
   text-align: center;
   border-top: 1px solid #E6E6E6; 
 
   @media (min-width: $tablet-width) {
-    padding: 43px 0 47px;
+    padding: 43px 0 7px;
     border: none;
   }
 
   @media (min-width: $desktop-width) {
-    padding: 45px 0;
-    border: none;
+    padding: 0px 0 9px;
   }
 
   &:last-child {
     border-bottom: 1px solid #E6E6E6; 
-
+    
     @media (min-width: $tablet-width) {
       border: none;
     }
   }
+
+  &--active {
+    @media (min-width: $tablet-width) {
+      border-bottom: 2px solid #68b738;
+    }
+
+    &:last-child {
+      @media (min-width: $tablet-width) {
+        border-bottom: 2px solid #68b738;
+      }  
+    }
+  }
 }
+
+
+
+// .site-list__item a[href] {
+//   @media (min-width: $tablet-width) {
+//     &:hover {
+//       opacity: 0.6;
+//     }
+  
+//     &:active {
+      
+//     }
+//   }
+
+// }
 
 .site-list a {
   font-size: 20px;
@@ -59,12 +90,11 @@
 
   @media (min-width: $desktop-width) {
     font-size: 20px;
-    color: #ffffff;
   }
 } 
 
-.site-list--inner a {
+.site-list--main a {
   @media (min-width: $desktop-width) {
-    color: inherit;
+    color: #ffffff;
   }
 }
