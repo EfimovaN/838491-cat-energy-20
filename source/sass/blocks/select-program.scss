@@ -45,7 +45,6 @@
   &:active {
     opacity: 0.3;
   }
-
   
   @media (min-width: $tablet-width) {
     margin-left: 87px;
@@ -73,8 +72,8 @@
   }
 }
 
-.select-program__radio:hover + label:hover::before,
-.select-program__radio:focus + label:hover::before {
+.select-program__radio:hover + label::before,
+.select-program__radio:focus + label::before {
     border-color: #BABABA;
 }
 

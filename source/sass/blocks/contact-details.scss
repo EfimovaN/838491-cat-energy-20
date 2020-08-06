@@ -55,8 +55,6 @@
   @media (min-width: $desktop-width) {
     left: 531px;
   }
-
-
 }
 
 .contact-details__field-icon--phone svg {
@@ -73,8 +71,6 @@
   }
 }
 
-
-
 .contact-details input:active + .contact-details__field-icon svg,
 .contact-details input:focus + .contact-details__field-icon svg{
   fill: #68B738;
@@ -83,12 +79,3 @@
 .contact-details input:invalid + .contact-details__field-icon svg {
   fill: #FF8282;
 }
-
-
-
-
-
-
-
-
-
