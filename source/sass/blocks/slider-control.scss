@@ -21,6 +21,13 @@
     line-height: 30px;
     border-bottom: 1px dotted #000000;
   }
+
+  &:hover,
+  &:focus {
+    @media (min-width: $tablet-width) {
+      border-bottom: 1px solid #575757;
+    }
+  }
 }
 
 .slider-control__toggle {
@@ -47,6 +54,7 @@
   left: 6px;
   border-radius: 6px;
   background: #68B738;
+  border: none;
   
   @media (min-width: $tablet-width) {
     width: 34px;
@@ -55,7 +63,26 @@
     left: 46%;
     border-radius: 50%;
     background-color: #ffffff;
+    border: 1px solid #CDCDCD;
+    box-shadow: (0px 1px 3px rgba(0, 0, 0, 0.16));
   }
+
+  &:hover,
+  &:focus {
+    @media (min-width: $tablet-width) {
+      box-shadow: (0px 2px 4px rgba(0, 0, 0, 0.19));
+      outline: none;
+    }
+  }
+
+  &:active {
+    @media (min-width: $tablet-width) {
+      border: 1px solid #68B738;
+      box-shadow: (0px 3px 5px rgba(0, 0, 0, 0.2));
+    }
+  }
+
+
 
   &::before {
     @media (min-width: $tablet-width) {
