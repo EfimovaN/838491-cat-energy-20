@@ -27,19 +27,18 @@
   }
 }
 
-.social__link svg {
+.social__icon {
+  color: #666666;
+
   &:hover,
   &:focus {
-    fill: #68B738;
+    color: #68B738;
   }
 
   &:active {
-    fill: #68B738;
+    color: #68B738;
     opacity: 0.3;
   }
-}
-
-.social__icon {
 
   @media (min-width: $tablet-width) {
     &--vk {

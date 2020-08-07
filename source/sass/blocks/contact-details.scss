@@ -27,7 +27,7 @@
   }
 }
 
-.contact-details input {
+.contact-details__field {
   margin-left: 10px;
   padding-right: 30px;
 
@@ -38,44 +38,45 @@
   @media (min-width: $desktop-width) {
     margin-left: 18px;
   }
+
+  &:focus + .contact-details__link,
+  &:active + .contact-details__link {
+    color: #68B738;
+  }
+  
+  &:invalid + .contact-details__link {
+    color: #FF8282;
+  }
 }
 
-.contact-details__field-icon svg {
+.contact-details__link {
+  color: #222222 ;
+}
+
+.contact-details__link-icon {
   position: absolute;
-  width: 20px;
+  width: 18px;
   height: 14px;
-  left: 247px;
-  top: 16px;
+  left: auto;
+  right: 15px;
+  top: 18px;
+  color: inherit;
 
-  @media (min-width: $tablet-width) {
-    left: 595px;
-    top: 18px;
-  }
-
+  
   @media (min-width: $desktop-width) {
-    left: 531px;
+    right: 18px;
+  }
+
+  &--phone {
+    width: 20px;
+    height: 20px;
+    top: 13px;
+  
+    @media (min-width: $tablet-width) {
+      top: 15px;
+    }
   }
 }
 
-.contact-details__field-icon--phone svg {
-  height: 20px;
-  top: 13px;
 
-  @media (min-width: $tablet-width) {
-    top: 15px;
-  }
 
-  @media (min-width: $desktop-width) {
-    left: 533px;
-    top: 15px;
-  }
-}
-
-.contact-details input:active + .contact-details__field-icon svg,
-.contact-details input:focus + .contact-details__field-icon svg{
-  fill: #68B738;
-}
-
-.contact-details input:invalid + .contact-details__field-icon svg {
-  fill: #FF8282;
-}
