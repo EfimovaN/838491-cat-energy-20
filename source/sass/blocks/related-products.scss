@@ -21,6 +21,7 @@
 }
 
 .related-products__title {
+  position: relative;
   margin: 0;
   font: inherit;
   font-size: 16px;
@@ -38,6 +39,44 @@
     color: #000000;
     text-transform: none;
 
+    &::after {
+      content: "";
+      position: absolute;
+      width: 53px;
+      height: 2px;
+      right: -20px;
+      top: 15px;
+      background-color: #68b738;
+
+      @media (min-width: $tablet-width) {
+        width: 328px;
+        right: -30px;
+        top: 20px;
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 957px;
+        right: -110px;
+      }
+    }
+
+    &::before {
+      @media (min-width: $tablet-width) {
+        content: "";
+        position: absolute;
+        width: 30px;
+        height: 2px;
+        left: -67px;
+        top: 20px;
+        background-color: #68b738;
+      }
+
+      @media (min-width: $desktop-width) {
+        width: 70px;
+        left: -110px;
+      }
+    }
+  
     @media (min-width: $tablet-width) {
       margin-left: 37px;
       font-size: 36px;
