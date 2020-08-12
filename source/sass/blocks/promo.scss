@@ -1,10 +1,10 @@
 .promo {
   position: relative;
-  margin-bottom:  187px;
+  margin-bottom: 12px;
   z-index: 1;
 
   @media (min-width: $tablet-width) {
-    margin-bottom:  521px;
+    margin-bottom:  516px;
   }
 
   @media (min-width: $desktop-width) {
@@ -48,7 +48,12 @@
   background-position: 0% 0%;
   background-repeat: no-repeat;
   z-index: -2;
-  
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
+
   @media (min-width: $tablet-width) {
     padding-left: 117px;
     background-image: none;
@@ -63,6 +68,11 @@
     background-position: 100% 0%;
     background-repeat: no-repeat;
     z-index: -2;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/index-background-desktop@2x.jpg");
+      background-size: 720px auto;
+    }
   }
 }
 
@@ -74,7 +84,7 @@
   text-transform: uppercase;
 
   @media (min-width: $tablet-width) {
-    margin-top: 16px;
+    margin-top: 14px;
     font-size: 20px;
     line-height: 20px;
     text-align: left;
@@ -83,21 +93,19 @@
 }
 
 .promo__button {
-  position: relative;
-  width: 280px;
-  top: 274px;
-
+  margin-top: 274px;
+  
   @media (min-width: $tablet-width) {
+    margin-left: -5px;
+    margin-top: 24px;
     padding: 18px 0;
     width: 244px;
     font-size: 20px;
-    top: 24px;
-    left: -5px;
   }
 
   @media (min-width: $desktop-width) {
-    top: 26px;
-    left: 0;
+    margin-left: 0;
+    margin-top: 26px;
   }
 }
 
@@ -106,7 +114,6 @@
   left: 20px;
   top: 166px;
   z-index: -1;
-  
 
   @media (min-width: $tablet-width) {
     left: 29px;

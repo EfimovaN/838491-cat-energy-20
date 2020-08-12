@@ -1,10 +1,15 @@
 .questionnaire-form {
+  margin: 0 -20px;
+  padding: 0 20px;
   font-size: 16px;
   line-height: 18px;
   text-transform: uppercase;
   border-color: #E7E7E7;
-
+  overflow: hidden;
+  
   @media (min-width: $tablet-width) {
+    margin: 0 -70px;
+    padding: 0 70px;
     font-size: 20px;
     line-height: 30px;
   }
@@ -16,12 +21,45 @@
   border: none;
 }
 
-.questionnaire-form legend {
-  margin-bottom: 33px;
+.questionnaire-form__title {
+  display: flex;
+  align-items: center;
+  margin-bottom: 34px;
   font-size: 24px;
   line-height: 26px;
+  text-align: left;
   text-transform: none;
   color: #000000;
+  overflow: hidden;
+
+  &:before,
+  &:after {
+  content: "";
+    height: 2px;
+    margin-top: 5px;
+    background-color: #68b738;
+  }
+
+  &:before {
+    width: 0;
+
+    @media (min-width: $tablet-width) {
+      margin-right: 40px;
+      width: 30px;
+    }
+  }
+
+  &:after {
+    width: 180px;
+    margin-left: 22px;
+  }
+
+  &--contacts {
+    &:after {
+      margin-top: -16px;
+      margin-left: -35px;
+    }
+  }
 
   @media (min-width: $tablet-width) {
     margin-bottom: 57px;
@@ -29,6 +67,15 @@
     line-height: 36px;
   }
 }
+
+.questionnaire-form__contact-details {
+  width: 280px;
+  
+  @media (min-width: $tablet-width) {
+    width: 630px;
+  }
+}
+
 
 .questionnaire-form__wrapper {
   @media (min-width: $desktop-width) {
@@ -59,30 +106,48 @@
   flex-grow: 1;
   margin-left: 14px;
   padding-left: 15px;
+  min-height: 43px;
   font-family: inherit;
   font-size: 16px;
-  line-height: 39px;
   text-transform: uppercase;
   color: #444444;
   border: 1px solid #E7E7E7;
-  
+  outline: none;
+
+  &:hover {
+    border: 1px solid #CDCDCD;
+  }
+
+  &:active,
+  &:focus {
+    border: 2px solid #444444;
+  }
+
+  &:invalid {
+    border: 2px solid #FF8282;
+  }
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    line-height: 48px;
+    min-height: 52px;
     margin-left: 19px;
     padding-left: 18px;
   }
 }
 
-.questionnaire-form svg {
-  position: absolute;
-  left: 0px;
+.questionnaire-form input:active + label {
+  opacity: 0.3;
+}
+
+.questionnaire-form label {
+  cursor: pointer;
+  user-select: none;
 }
 
 .questionnaire-form__submit-wrapper {
   @media (min-width: $tablet-width) {
     display: flex;
-    margin-bottom: 51px;
+    margin-bottom: 52px;
   }
 
   @media (min-width: $desktop-width) {

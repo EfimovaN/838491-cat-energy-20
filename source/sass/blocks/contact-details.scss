@@ -21,13 +21,15 @@
 }
 
 .contact-details li {
+  position: relative;
   @media (min-width: $desktop-width) {
     width: 570px;
   }
 }
 
-.contact-details input {
+.contact-details__field {
   margin-left: 10px;
+  padding-right: 30px;
 
   @media (min-width: $tablet-width) {
     margin-left: 17px;
@@ -36,13 +38,45 @@
   @media (min-width: $desktop-width) {
     margin-left: 18px;
   }
+
+  &:focus + .contact-details__link,
+  &:active + .contact-details__link {
+    color: #68B738;
+  }
+  
+  &:invalid + .contact-details__link {
+    color: #FF8282;
+  }
 }
 
+.contact-details__link {
+  color: #222222 ;
+}
 
+.contact-details__link-icon {
+  position: absolute;
+  width: 18px;
+  height: 14px;
+  left: auto;
+  right: 15px;
+  top: 18px;
+  color: inherit;
 
+  
+  @media (min-width: $desktop-width) {
+    right: 18px;
+  }
 
-
-
+  &--phone {
+    width: 20px;
+    height: 20px;
+    top: 13px;
+  
+    @media (min-width: $tablet-width) {
+      top: 15px;
+    }
+  }
+}
 
 
 

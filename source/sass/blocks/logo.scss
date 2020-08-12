@@ -1,13 +1,36 @@
 .logo {
   @media (min-width: $tablet-width) {
-    padding-top: 22px;
+    padding-top: 24px;
   }
 
   @media (min-width: $desktop-width) {
-    padding-top: 52px;
+    position: relative;
+    z-index: 2;
+    padding-top: 53px;
+  }
+
+  &:hover,
+  &:focus {
+    opacity: 80%;
+  }
+
+  &:active {
+    opacity: 60%;
   }
 }
 
 .logo__image {
   min-height: 63px;
+
+  @media (min-width: $tablet-width) {
+    width: 174px;
+    min-height: 52px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 202px;
+    min-height: 59px;
+  }
 }
+
+
