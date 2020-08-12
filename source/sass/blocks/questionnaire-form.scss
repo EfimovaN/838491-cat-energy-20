@@ -21,6 +21,7 @@
 }
 
 .questionnaire-form__title {
+  position: relative;
   display: flex;
   align-items: center;
   margin-bottom: 34px;
@@ -29,7 +30,6 @@
   text-align: left;
   text-transform: none;
   color: #000000;
-  position: relative;
   
   &:before {
     content: "";

@@ -1,6 +1,7 @@
 .related-products {
   padding-top: 28px;
   padding-bottom: 35px;
+  
 
   @media (min-width: $tablet-width) {
     margin: -450px 0 41px;
@@ -27,6 +28,7 @@
   font-size: 16px;
   line-height: 16px;
   text-transform: uppercase;
+  overflow: hidden;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -34,58 +36,96 @@
   }
 
   &--main {
+    position: relative;
+    display: flex;
+    align-items: center;
     font-size: 24px;
     line-height: 24px;
+    text-align: left;
     color: #000000;
     text-transform: none;
-
-    &::after {
+    
+    &:before {
       content: "";
       position: absolute;
-      width: 53px;
-      height: 2px;
-      right: -20px;
-      top: 15px;
-      background-color: #68b738;
-
-      @media (min-width: $tablet-width) {
-        width: 328px;
-        right: -30px;
-        top: 20px;
-      }
-
-      @media (min-width: $desktop-width) {
-        width: 957px;
-        right: -110px;
-      }
-    }
-
-    &::before {
-      @media (min-width: $tablet-width) {
-        content: "";
-        position: absolute;
-        width: 30px;
-        height: 2px;
-        left: -67px;
-        top: 20px;
-        background-color: #68b738;
-      }
-
-      @media (min-width: $desktop-width) {
-        width: 70px;
-        left: -110px;
-      }
-    }
+      width: calc(100% + 53px);
+      height: 100%;
+      left: -30px;
+      top: 0;
+      background: #ffffff;
+      z-index: -1;
   
-    @media (min-width: $tablet-width) {
-      margin-left: 37px;
-      font-size: 36px;
-      line-height: 36px;
+      @media (min-width: $tablet-width) {
+        width: calc(100% + 80px);
+        left: -40px;
+      }
     }
 
-    @media (min-width: $desktop-width) {
-      margin: 0;
+    &:after {
+      content: "";
+      position: absolute;
+      width: 100vw;
+      height: 2px;
+      background-color: #68b738;
+      left: 0;
+      top: 50%;
+      z-index: -2;
+      margin-top: 2px;
+
+      @media (min-width: $tablet-width) {
+        width: 300vw;
+        left: -100vw;
+        margin-top: 4px;
+      }
     }
+  }
+
+    // &::after {
+    //   // content: "";
+    //   // position: absolute;
+    //   // width: 53px;
+    //   // height: 2px;
+    //   // right: -20px;
+    //   // top: 15px;
+    //   // background-color: #68b738;
+
+    //   @media (min-width: $tablet-width) {
+    //     // width: 328px;
+    //     // right: -30px;
+    //     // top: 20px;
+    //   }
+
+    //   @media (min-width: $desktop-width) {
+    //     // width: 957px;
+    //     // right: -110px;
+    //   }
+    // }
+
+    // &::before {
+    //   // @media (min-width: $tablet-width) {
+    //   //   content: "";
+    //   //   position: absolute;
+    //   //   width: 30px;
+    //   //   height: 2px;
+    //   //   left: -67px;
+    //   //   top: 20px;
+    //   //   background-color: #68b738;
+    //   // }
+
+    //   // @media (min-width: $desktop-width) {
+    //   //   width: 70px;
+    //   //   left: -110px;
+    //   // }
+    // }
+  
+  @media (min-width: $tablet-width) {
+    margin-left: 37px;
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
   }
 }
 
