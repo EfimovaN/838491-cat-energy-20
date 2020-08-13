@@ -98,7 +98,6 @@
             </li>
           </ul>
         </div>
-        
       </section>
 
       <section class="story">
@@ -123,16 +122,31 @@
             </div>
           </div>
           <div class="story__slider story-slider">
-            <div class="story-slider__image">
-              <picture>
-                <source type="image/webp" media="(min-width: 1440px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
-                <source media="(min-width: 1440px)" srcset="img/before-desktop@1x.png, img/before-desktop@2x.png 2x">
-                <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
-                <img src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Было>">
-              </picture>
+            <div class="story-slider__images">
+              
+              <div class="story-slider__image story-slider__image--before">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="img/before-desktop@1x.webp 1x, img/before-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/before-tablet@1x.webp 1x, img/before-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/before-mobile@1x.webp 1x, img/before-mobile@2x.webp 2x">
+                  <source media="(min-width: 1440px)" srcset="img/before-desktop@1x.png, img/before-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+                  <img src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" alt="Было>">
+                </picture>
+              </div>
+              <div class="story-slider__image story-slider__image--after">
+                <picture>
+                  <source type="image/webp" media="(min-width: 1440px)" srcset="img/after-desktop@1x.webp 1x, img/after-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/after-tablet@1x.webp 1x, img/after-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/after-mobile@1x.webp 1x, img/after-mobile@2x.webp 2x">
+                  <source media="(min-width: 1440px)" srcset="img/after-desktop@1x.png 1x, img/after-desktop@2x.png 2x">
+                  <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
+                  <img src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" alt="Стало">
+                </picture>
+              </div>
+              
             </div>
+
             <div class="story-slider__control slider-control">
               <button class="slider-control__button" type="button">Было</button>
               <div class="slider-control__toggle">
