@@ -1,5 +1,4 @@
 .advantages {
-  
   @media (min-width: $desktop-width) {
     margin: 31px 0 0;
   }
@@ -45,7 +44,7 @@
     padding: 113px 0 0;
     width: 245px;
   }
-  
+
   &:before {
     content: "";
     display: block;
@@ -54,15 +53,15 @@
     height: 60px;
     top: -1px;
     left: 0px;
-    background: #68B738; 
+    background: #68B738;
 
     @media (min-width: $tablet-width) {
       width: 80px;
       height: 80px;
       top: 0px;
-    }  
+    }
   }
-  
+
   &--img {
     &:after {
       content: "";
@@ -72,9 +71,8 @@
       height: 60px;
       top: 3px;
       left: 5px;
-      background-repeat: no-repeat; 
+      background-repeat: no-repeat;
       z-index: 1;
-      
       @media (min-width: $tablet-width) {
         top: 15px;
         left: 15px;
@@ -132,7 +130,7 @@
         height: 280px;
         top: 0px;
         left: 125px;
-        background-repeat: no-repeat; 
+        background-repeat: no-repeat;
         z-index: -1;
       }
     }
@@ -170,5 +168,3 @@
     }
   }
 }
-
-

@@ -43,13 +43,13 @@
     @media (min-width: $desktop-width) {
       margin-right: 105px;
     }
-  } 
+  }
 
   &:nth-child(4n) {
     @media (min-width: $desktop-width) {
       margin-right: 0;
     }
-  } 
+  }
 }
 
 .additionally__label {

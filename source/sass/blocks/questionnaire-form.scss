@@ -7,7 +7,7 @@
   line-height: 18px;
   text-transform: uppercase;
   border-color: #E7E7E7;
-    
+
   @media (min-width: $tablet-width) {
     font-size: 20px;
     line-height: 30px;
@@ -30,7 +30,7 @@
   text-align: left;
   text-transform: none;
   color: #000000;
-  
+
   &:before {
     content: "";
     position: absolute;
