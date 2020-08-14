@@ -52,6 +52,21 @@
     }
   }
 
+  &:last-child {
+    border-bottom: 1px solid #D9D9D9;
+
+    @media (min-width: $tablet-width) {
+      border: none;
+      padding: 80px 0 0;
+    }
+    
+    &:after {
+      @media (min-width: $tablet-width) {
+        display: none;
+      }
+    }
+  }
+
   &:nth-child(4n) {
     @media (min-width: $desktop-width) {
       margin-right: 0px;
