@@ -1,18 +1,19 @@
 .catalog-list {
+  display: grid;
   margin: 0 -20px;
   padding: 0;
   list-style: none;
 
   @media (min-width: $tablet-width) {
+    grid-template-columns: auto auto;
+    column-gap: 60px;
     margin: 43px 0 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
     margin: 66px 0 0;
-    justify-content: start;
+    grid-template-columns: auto auto auto auto;
+    column-gap: 80px;
   }
 }
 
@@ -33,7 +34,6 @@
 
   @media (min-width: $desktop-width) {
     margin-bottom: 64px;
-    margin-right: 80px;
     padding-top: 30px;
     width: 245px;
   }
