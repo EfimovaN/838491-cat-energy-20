@@ -2,8 +2,10 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Кэт энерджи</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
@@ -91,16 +93,16 @@
                     <input class="contact-details__field" type="email" name="email" id="email" placeholder="kuklachev@gmail.com" required>
                     <a href="#" class="contact-details__link">
                       <svg class="contact-details__link-icon contact-details__link-icon--email" role="img" width="17" height="13">
-                        <use xlink:href="img/sprite.svg#icon_email"></use>
+                        <use xlink:href="img/sprite.svg#icon-mail"></use>
                       </svg>
                     </a>
                   </li>
                   <li class="contact-details__item">
                     <label class="contact-details__label" for="phone">Телефон:*</label>
-                    <input class="contact-details__field" type="tel" name="phone" id="phone" placeholder="8 (960) 900-60-90" required>
+                    <input class="contact-details__field" type="tel" name="phone" id="phone" pattern="[0-9\s\.\-\+\(\)]{2,20}" placeholder="8 (960) 900-60-90" required>
                     <a href="#" class="contact-details__link">
                       <svg class="contact-details__link-icon contact-details__link-icon--phone" role="img" width="20" height="20">
-                        <use xlink:href="img/sprite.svg#icon_phone"></use>
+                        <use xlink:href="img/sprite.svg#icon-phone"></use>
                       </svg>
                     </a>
                   </li>
@@ -176,7 +178,7 @@
               <a class="social__link" href="https://vk.com/">
                 <span class="visually-hidden">Vkontakte</span>
                 <svg class="social__icon social__icon--vk" role="img" width="22" height="12">
-                  <use xlink:href="img/sprite.svg#icon_vk"></use>
+                  <use xlink:href="img/sprite.svg#icon-vk"></use>
                 </svg>
               </a>
             </li>
@@ -184,7 +186,7 @@
               <a class="social__link" href="https://www.instagram.com/">
                 <span class="visually-hidden">Instagram</span>
                 <svg class="social__icon social__icon--instagram" role="img" width="16" height="16">
-                  <use xlink:href="img/sprite.svg#icon_instagram"></use>
+                  <use xlink:href="img/sprite.svg#icon-insta"></use>
                 </svg>
               </a>
             </li>
@@ -192,7 +194,7 @@
               <a class="social__link" href="https://www.facebook.com/">
                 <span class="visually-hidden">Facebook</span>
                 <svg class="social__icon social__icon--fb" role="img" width="10" height="19">
-                  <use xlink:href="img/sprite.svg#icon_fb"></use>
+                  <use xlink:href="img/sprite.svg#icon-fb"></use>
                 </svg>
               </a>
             </li>
@@ -201,7 +203,7 @@
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy">
               <p>HTML Academy</p>
               <svg class="copyright__link-icon" role="img" width="27" height="34">
-                <use xlink:href="img/sprite.svg#icon_academy"></use>
+                <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
               </svg>
             </a>
           </div>
