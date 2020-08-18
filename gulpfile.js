@@ -11,18 +11,8 @@ const imagemin = require("gulp-imagemin");
 const webp = require("gulp-webp");
 const svgstore = require("gulp-svgstore");
 const htmlmin = require("gulp-htmlmin");
+const uglify = require("gulp-uglify");
 const del = require("del");
-
-// Build
-
-// const build = () => gulp.series(
-//   "clean",
-//   "copy",
-//   "styles",
-//   "html"
-//  );
-
-//  exports.build = build;
 
 // Styles
 
@@ -39,7 +29,7 @@ const styles = () => {
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("build/css"))
     .pipe(sync.stream());
-}
+};
 
 exports.styles = styles;
 
@@ -51,8 +41,8 @@ const images = () => {
   imagemin.optipng({optimizationLevel: 3}),
   imagemin.jpegtran({progressive: true}),
   imagemin.svgo()
-  ]))
- }
+  ]));
+ };
 
  exports.images = images;
 
@@ -61,8 +51,8 @@ const images = () => {
 const createWebp = () => {
   return gulp.src("source/img/**/*.{png,jpg}")
   .pipe(webp({quality: 90}))
-  .pipe(gulp.dest("source/img"))
-}
+  .pipe(gulp.dest("source/img"));
+};
 
 exports.webp = createWebp;
 
@@ -72,8 +62,8 @@ const sprite = () => {
   return gulp.src("source/img/**/icon-*.svg")
   .pipe(svgstore())
   .pipe(rename("sprite.svg"))
-  .pipe(gulp.dest("build/img"))
- }
+  .pipe(gulp.dest("build/img"));
+ };
 
  exports.sprite = sprite;
 
@@ -83,17 +73,30 @@ const html = () => {
   return gulp.src("source/*.html")
   .pipe(htmlmin({collapseWhitespace: true}))
   .pipe(gulp.dest("build"));
-}
+};
 
 exports.html = html;
 
- // Copy
+// JS
+
+const minify = () => {
+  return gulp.src("source/js/*.js")
+  .pipe(uglify())
+  .pipe(rename(function (path) {
+    path.basename += ".min";
+  }))  
+  .pipe(gulp.dest("build/js"));
+};
+
+exports.compress = minify;
+
+
+// Copy
 
 const copy = () => {
   return gulp.src([
     "source/fonts/**/*.{woff,woff2}",
     "source/img/**",
-    "source/js/**",
     "source/*.ico"
   ], {
     base: "source"
@@ -123,7 +126,7 @@ const server = (done) => {
     ui: false,
   });
   done();
-}
+};
 
 exports.server = server;
 
@@ -135,7 +138,7 @@ const watcher = () => {
 }
 
 exports.build = gulp.series(
-  clean, copy, styles, html
+  clean, copy, styles, html, minify
 );
 
 exports.default = gulp.series(
