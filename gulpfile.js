@@ -24,7 +24,7 @@ const del = require("del");
 
 //  exports.build = build;
 
- // Styles
+// Styles
 
 const styles = () => {
   return gulp.src("source/sass/style.scss")
@@ -55,16 +55,16 @@ const images = () => {
  }
 
  exports.images = images;
- 
+
 // WebP
 
 const createWebp = () => {
   return gulp.src("source/img/**/*.{png,jpg}")
   .pipe(webp({quality: 90}))
   .pipe(gulp.dest("source/img"))
- }
+}
 
- exports.webp = createWebp;
+exports.webp = createWebp;
 
 // Sprite
 
@@ -108,7 +108,7 @@ const copy = () => {
  const clean = () => {
   return del("build");
  };
- 
+
  exports.clean = clean;
 
  // Server

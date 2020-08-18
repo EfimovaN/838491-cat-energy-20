@@ -39,11 +39,11 @@
 
   &:focus + .contact-details__link,
   &:active + .contact-details__link {
-    color: #68B738;
+    color: #68b738;
   }
 
   &:invalid + .contact-details__link {
-    color: #FF8282;
+    color: #ff8282;
   }
 }
 
