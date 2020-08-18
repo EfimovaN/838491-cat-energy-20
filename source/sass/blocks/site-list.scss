@@ -29,7 +29,7 @@
   margin: 0;
   padding: 20px 0;
   text-align: center;
-  border-top: 1px solid #E6E6E6; 
+  border-top: 1px solid #E6E6E6;
 
   @media (min-width: $tablet-width) {
     padding: 43px 0 7px;
@@ -41,8 +41,8 @@
   }
 
   &:last-child {
-    border-bottom: 1px solid #E6E6E6; 
-    
+    border-bottom: 1px solid #E6E6E6;
+
     @media (min-width: $tablet-width) {
       border: none;
     }
@@ -56,7 +56,7 @@
     &:last-child {
       @media (min-width: $tablet-width) {
         border-bottom: 2px solid #68b738;
-      }  
+      }
     }
   }
 }
@@ -76,7 +76,7 @@
   @media (min-width: $desktop-width) {
     font-size: 20px;
   }
-} 
+}
 
 .site-list__item a[href] {
     @media (min-width: $tablet-width) {
@@ -84,14 +84,12 @@
       &:focus {
         opacity: 60%;
       }
-    
+
       &:active {
         opacity: 30%;
       }
     }
-  
   }
-
 
 .site-list--main a {
   @media (min-width: $desktop-width) {

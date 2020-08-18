@@ -1,4 +1,6 @@
 .main-nav {
+  position: relative;
+
   @media (min-width: $tablet-width) {
     display: flex;
     justify-content: space-between;
@@ -6,19 +8,56 @@
 }
 
 .main-nav__toggle {
-  width: 18px;
-  height: 18px;
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  top: 19px;
+  right: -1px;
   border: none;
-  // display: inline-block;
-  // vertical-align: middle;
-  // position: absolute;
-  // right: 3px;
-  // top: -42px;
-  background-image: url("../img/icon-close.svg");
-  background-repeat: no-repeat;
+  background-color: #ffffff;
+  
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $tablet-width) {
     display: none;
   }
 }
 
+.main-nav--closed .main-nav__toggle::before {
+  content: "";
+  position: absolute;
+  top: 4px;
+  right: 1px;
+  width: 24px;
+  height: 2px;
+  background-color: #000000;
+  box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
+}
+
+.main-nav--closed .site-list__item {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+}
+
+.main-nav--opened .main-nav__toggle {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 22px;
+  right: 2px;
+  border: none;
+  background-color: #ffffff;
+  background-image: url("../img/icon-close.svg");
+  background-repeat: no-repeat;
+}
+
+
+.main-nav--nojs .main-nav__toggle {
+  @media (max-width: $mobile-width-only) {
+    display: none;
+  }
+  
+}

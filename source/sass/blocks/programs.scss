@@ -1,15 +1,16 @@
 .programs {
   padding: 10px 0;
-  
+
   @media (min-width: $tablet-width) {
     margin-bottom: 5px;
   }
 }
 
 .programs .container {
-  @media (min-width: $desktop-width) {
-    display: flex;
-    justify-content: space-between;
-  }
+  display: grid;
 
+  @media (min-width: $desktop-width) {
+    grid-template-columns: auto auto;
+    column-gap: 80px;
+  }
 }

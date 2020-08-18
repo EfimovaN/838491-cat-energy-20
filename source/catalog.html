@@ -2,14 +2,16 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Кэт энерджи</title>
-    <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.min">
   </head>
   <body>
     <header class="page-header">
       <div class="container">
-        <nav class="main-nav">
+        <nav class="main-nav main-nav--opened main-nav--nojs">
           <a class="logo" href="index.html">
             <picture>
               <source media="(min-width: 1440px)" srcset="img/logo-desktop.svg">
@@ -17,7 +19,7 @@
               <img class="logo__image" src="img/logo-mobile.svg" width="190" height="38" alt="Cat Energy">
             </picture>
           </a>
-          <button class="main-nav__toggle visually-hidden" type="button">
+          <button class="main-nav__toggle" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
           <div class="main-nav__wrapper">
@@ -44,10 +46,9 @@
         <div class="container">
           <h2 class="section-title section-title--catalog">Каталог продукции</h2>
           <ul class="catalog__list catalog-list">
-
             <li class="catalog-list__item">
               <div class="catalog-list__wrapper">
-                <a class="catalog-list__link" href="#">
+                <a class="catalog-list__link" href="products.html">
                   <picture>
                     <source type="image/webp" media="(min-width: 1440px)" srcset="img/chicken-small-desktop@1x.webp 1x, img/chicken-small-desktop@2x.webp 2x">
                     <source type="image/webp" media="(min-width: 768px)" srcset="img/chicken-small-tablet@1x.webp 1x, img/chicken-small-tablet@2x.webp 2x">
@@ -59,7 +60,7 @@
                 </a>
                 <div class="catalog-list__info">
                   <h3 class="catalog-list__title">
-                    <a class="catalog-list__title-link" href="#">Cat Energy PRO 500 г</a>
+                    <a class="catalog-list__title-link" href="products.html">Cat Energy PRO 500 г</a>
                   </h3>
                   <table class="catalog-list__properties properties">
                     <tr>
@@ -77,12 +78,12 @@
                   </table>
                 </div>
               </div>
-              <a class="catalog-list__button button" href="#">Заказать</a>
+              <a class="catalog-list__button button" href="order.html">Заказать</a>
             </li>
 
             <li class="catalog-list__item">
               <div class="catalog-list__wrapper">
-                <a class="catalog-list__link" href="#">
+                <a class="catalog-list__link" href="products.html">
                   <picture>
                     <source type="image/webp" media="(min-width: 1440px)" srcset="img/chicken-big-desktop@1x.webp 1x, img/chicken-big-desktop@2x.webp 2x">
                     <source type="image/webp" media="(min-width: 768px)" srcset="img/chicken-big-tablet@1x.webp 1x, img/chicken-big-tablet@2x.webp 2x">
@@ -94,7 +95,7 @@
                 </a>
                 <div class="catalog-list__info">
                   <h3 class="catalog-list__title">
-                    <a class="catalog-list__title-link" href="#">Cat Energy PRO 1000 г</a>
+                    <a class="catalog-list__title-link" href="products.html">Cat Energy PRO 1000 г</a>
                   </h3>
                   <table class="catalog-list__properties properties">
                     <tr>
@@ -112,12 +113,12 @@
                   </table>
                 </div>
               </div>
-              <a class="catalog-list__button button" href="#">Заказать</a>
+              <a class="catalog-list__button button" href="order.html">Заказать</a>
             </li>
 
             <li class="catalog-list__item">
               <div class="catalog-list__wrapper">
-                <a class="catalog-list__link" href="#">
+                <a class="catalog-list__link" href="products.html">
                   <picture>
                     <source type="image/webp" media="(min-width: 1440px)" srcset="img/fish-small-desktop@1x.webp 1x, img/fish-small-desktop@2x.webp 2x">
                     <source type="image/webp" media="(min-width: 768px)" srcset="img/fish-small-tablet@1x.webp 1x, img/fish-small-tablet@2x.webp 2x">
@@ -129,7 +130,7 @@
                 </a>
                 <div class="catalog-list__info">
                   <h3 class="catalog-list__title">
-                    <a class="catalog-list__title-link" href="#">Cat Energy PRO 500 г</a>
+                    <a class="catalog-list__title-link" href="products.html">Cat Energy PRO 500 г</a>
                   </h3>
                   <table class="catalog-list__properties properties">
                     <tr>
@@ -147,12 +148,12 @@
                   </table>
                 </div>
               </div>
-              <a class="catalog-list__button button" href="#">Заказать</a>
+              <a class="catalog-list__button button" href="order.html">Заказать</a>
             </li>
 
             <li class="catalog-list__item">
               <div class="catalog-list__wrapper">
-                <a class="catalog-list__link" href="#">
+                <a class="catalog-list__link" href="products.html">
                   <picture>
                     <source type="image/webp" media="(min-width: 1440px)" srcset="img/fish-big-desktop@1x.webp 1x, img/fish-big-desktop@2x.webp 2x">
                     <source type="image/webp" media="(min-width: 768px)" srcset="img/fish-big-tablet@1x.webp 1x, img/fish-big-tablet@2x.webp 2x">
@@ -164,7 +165,7 @@
                 </a>
                 <div class="catalog-list__info">
                   <h3 class="catalog-list__title">
-                    <a class="catalog-list__title-link" href="#">Cat Energy PRO 1000 г</a>
+                    <a class="catalog-list__title-link" href="products.html">Cat Energy PRO 1000 г</a>
                   </h3>
                   <table class="catalog-list__properties properties">
                     <tr>
@@ -182,12 +183,12 @@
                   </table>
                 </div>
               </div>
-              <a class="catalog-list__button button" href="#">Заказать</a>
+              <a class="catalog-list__button button" href="order.html">Заказать</a>
             </li>
 
             <li class="catalog-list__item">
               <div class="catalog-list__wrapper">
-                <a class="catalog-list__link" href="#">
+                <a class="catalog-list__link" href="products.html">
                   <picture>
                     <source type="image/webp" media="(min-width: 1440px)" srcset="img/buckwheat-small-desktop@1x.webp 1x, img/buckwheat-small-desktop@2x.webp 2x">
                     <source type="image/webp" media="(min-width: 768px)" srcset="img/buckwheat-small-tablet@1x.webp 1x, img/buckwheat-small-tablet@2x.webp 2x">
@@ -199,7 +200,7 @@
                 </a>
                 <div class="catalog-list__info">
                   <h3 class="catalog-list__title">
-                    <a class="catalog-list__title-link" href="#">Cat Energy SLIM 500 г</a>
+                    <a class="catalog-list__title-link" href="products.html">Cat Energy SLIM 500 г</a>
                   </h3>
                   <table class="catalog-list__properties properties">
                     <tr>
@@ -217,12 +218,12 @@
                   </table>
                 </div>
               </div>
-              <a class="catalog-list__button button" href="#">Заказать</a>
+              <a class="catalog-list__button button" href="order.html">Заказать</a>
             </li>
 
             <li class="catalog-list__item">
               <div class="catalog-list__wrapper">
-                <a class="catalog-list__link" href="#">
+                <a class="catalog-list__link" href="products.html">
                   <picture>
                     <source type="image/webp" media="(min-width: 1440px)" srcset="img/buckwheat-big-desktop@1x.webp 1x, img/buckwheat-big-desktop@2x.webp 2x">
                     <source type="image/webp" media="(min-width: 768px)" srcset="img/buckwheat-big-tablet@1x.webp 1x, img/buckwheat-big-tablet@2x.webp 2x">
@@ -234,7 +235,7 @@
                 </a>
                 <div class="catalog-list__info">
                   <h3 class="catalog-list__title">
-                    <a class="catalog-list__title-link" href="#">Cat Energy SLIM 1000 г</a>
+                    <a class="catalog-list__title-link" href="products.html">Cat Energy SLIM 1000 г</a>
                   </h3>
                   <table class="catalog-list__properties properties">
                     <tr>
@@ -252,12 +253,12 @@
                   </table>
                 </div>
               </div>
-              <a class="catalog-list__button button" href="#">Заказать</a>
+              <a class="catalog-list__button button" href="order.html">Заказать</a>
             </li>
 
             <li class="catalog-list__item">
               <div class="catalog-list__wrapper">
-                <a class="catalog-list__link" href="#">
+                <a class="catalog-list__link" href="products.html">
                   <picture>
                     <source type="image/webp" media="(min-width: 1440px)" srcset="img/rice-small-desktop@1x.webp 1x, img/rice-small-desktop@2x.webp 2x">
                     <source type="image/webp" media="(min-width: 768px)" srcset="img/rice-small-tablet@1x.webp 1x, img/rice-small-tablet@2x.webp 2x">
@@ -269,7 +270,7 @@
                 </a>
                 <div class="catalog-list__info">
                   <h3 class="catalog-list__title">
-                    <a class="catalog-list__title-link" href="#">Cat Energy SLIM 500 г</a>
+                    <a class="catalog-list__title-link" href="products.html">Cat Energy SLIM 500 г</a>
                   </h3>
                   <table class="catalog-list__properties properties">
                     <tr>
@@ -287,15 +288,17 @@
                   </table>
                 </div>
               </div>
-              <a class="catalog-list__button button" href="#">Заказать</a>
+              <a class="catalog-list__button button" href="order.html">Заказать</a>
+            </li>
+
+            <li class="catalog-list__item">
+              <div class="catalog-list__more-product more-product">
+                <h3 class="more-product__title">Показать еще 100500 товаров</h3>
+                <p class="more-product__description">На самом деле вкусов гораздо больше!</p>
+                <a class="more-product__button button button--secondary" href="products.html">Показать все</a>
+              </div>
             </li>
           </ul>
-
-          <div class="catalog__more-product more-product">
-            <h3 class="more-product__title">Показать еще 100500 товаров</h3>
-            <p class="more-product__description">На самом деле вкусов гораздо больше!</p>
-            <a class="more-product__button button button--secondary" href="">Показать все</a>
-          </div>
         </div>
       </section>
 
@@ -306,54 +309,46 @@
             <ul class="related-products__list">
               <li class="related-products__item">
                 <div class="related-products__info">
-                  <h3 class="related-products__title">
-                    <a class="related-products__title-link" href="#">Сахарозаменитель</a>
-                  </h3>
+                  <h3 class="related-products__title">Сахарозаменитель</h3>
                   <p class="related-products__properties">
                     <span class="related-products__field">1 упаковка (100 г)</span>
                     <span class="related-products__value">200 P.</span>
                   </p>
                 </div>
-                <a class="related-products__button button" href="#">Заказать</a>
+                <a class="related-products__button button" href="order.html">Заказать</a>
               </li>
               <li class="related-products__item">
                 <div class="related-products__info">
-                  <h3 class="related-products__title">
-                    <a class="related-products__title-link" href="#">Питьевая вода</a>
-                  </h3>
+                  <h3 class="related-products__title">Питьевая вода</h3>
                   <p class="related-products__properties">
                     <span class="related-products__field">5 литров</span>
                     <span class="related-products__value">50 P.</span>
                   </p>
                 </div>
-                <a class="related-products__button button" href="#">Заказать</a>
+                <a class="related-products__button button" href="order.html">Заказать</a>
               </li>
               <li class="related-products__item">
                 <div class="related-products__info">
-                  <h3 class="related-products__title">
-                    <a class="related-products__title-link" href="#">Молоко</a>
-                  </h3>
+                  <h3 class="related-products__title">Молоко</h3>
                   <p class="related-products__properties">
                     <span class="related-products__field">1 литр</span>
                     <span class="related-products__value">100 P.</span>
                   </p>
                 </div>
-                <a class="related-products__button button" href="#">Заказать</a>
+                <a class="related-products__button button" href="order.html">Заказать</a>
               </li>
               <li class="related-products__item">
                 <div class="related-products__info">
-                  <h3 class="related-products__title">
-                    <a class="related-products__title-link" href="#">Витамины</a>
-                  </h3>
+                  <h3 class="related-products__title">Витамины</h3>
                   <p class="related-products__properties">
                     <span class="related-products__field">1 упаковка (30 г)</span>
                     <span class="related-products__value">300 P.</span>
                   </p>
                 </div>
-                <a class="related-products__button button" href="#">Заказать</a>
+                <a class="related-products__button button" href="order.html">Заказать</a>
               </li>
             </ul>
-            
+
             <div class="related-products__special-offer special-offer">
               <h3 class="visually-hidden">Специальное предложение</h3>
               <p class="special-offer__text">Закажите все и&nbsp;получите чехол для кота в подарок!</p>
@@ -373,9 +368,9 @@
             </div>
           </div>
         </div>
-        
+
         <div class="contacts__map">
-          
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6092001620914!2d30.320896316254807!3d59.93862666906144!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTnCsDU2JzE5LjEiTiAzMMKwMTknMjMuMSJF!5e0!3m2!1sru!2sru!4v1597419979373!5m2!1sru!2sru" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>
       </section>
 
@@ -392,7 +387,7 @@
               <a class="social__link" href="https://vk.com/">
                 <span class="visually-hidden">Vkontakte</span>
                 <svg class="social__icon social__icon--vk" role="img" width="22" height="12">
-                  <use xlink:href="img/sprite.svg#icon_vk"></use>
+                  <use xlink:href="img/sprite.svg#icon-vk"></use>
                 </svg>
               </a>
             </li>
@@ -400,7 +395,7 @@
               <a class="social__link" href="https://www.instagram.com/">
                 <span class="visually-hidden">Instagram</span>
                 <svg class="social__icon social__icon--instagram" role="img" width="16" height="16">
-                  <use xlink:href="img/sprite.svg#icon_instagram"></use>
+                  <use xlink:href="img/sprite.svg#icon-insta"></use>
                 </svg>
               </a>
             </li>
@@ -408,7 +403,7 @@
               <a class="social__link" href="https://www.facebook.com/">
                 <span class="visually-hidden">Facebook</span>
                 <svg class="social__icon social__icon--fb" role="img" width="10" height="19">
-                  <use xlink:href="img/sprite.svg#icon_fb"></use>
+                  <use xlink:href="img/sprite.svg#icon-fb"></use>
                 </svg>
               </a>
             </li>
@@ -417,12 +412,13 @@
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Сайт HTML Academy">
               <p>HTML Academy</p>
               <svg class="copyright__link-icon" role="img" width="27" height="34">
-                <use xlink:href="img/sprite.svg#icon_academy"></use>
+                <use xlink:href="img/sprite.svg#icon-htmlacademy"></use>
               </svg>
             </a>
           </div>
         </div>
       </div>
     </footer>
+    <script src="js/main.js"></script>
   </body>
 </html>

@@ -27,7 +27,7 @@
     @media (min-width: $desktop-width) {
       width: 52.9%;
     }
-    
+
     img {
       object-fit: none;
       object-position: left center;
@@ -61,7 +61,7 @@
 
 .story-slider__control {
   margin: 26px auto 15px;
-  width: 205px; 
+  width: 205px;
 
   @media (min-width: $tablet-width) {
     margin: 12px auto 15px;
