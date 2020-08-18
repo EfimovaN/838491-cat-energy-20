@@ -1,7 +1,6 @@
 .site-list {
-  margin: 0;
-  padding: 0;
   margin: 0 -20px;
+  padding: 0;
   list-style: none;
 
   @media (min-width: $tablet-width) {
@@ -79,17 +78,17 @@
 }
 
 .site-list__item a[href] {
-    @media (min-width: $tablet-width) {
-      &:hover,
-      &:focus {
-        opacity: 60%;
-      }
+  @media (min-width: $tablet-width) {
+    &:hover,
+    &:focus {
+      opacity: 60%;
+    }
 
-      &:active {
-        opacity: 30%;
-      }
+    &:active {
+      opacity: 30%;
     }
   }
+}
 
 .site-list--main a {
   @media (min-width: $desktop-width) {
