@@ -15,14 +15,14 @@ const del = require("del");
 
 // Build
 
-const build = () => gulp.series(
-  "clean",
-  "copy",
-  "styles",
-  "html"
- );
+// const build = () => gulp.series(
+//   "clean",
+//   "copy",
+//   "styles",
+//   "html"
+//  );
 
- exports.build = build;
+//  exports.build = build;
 
  // Styles
 
@@ -81,9 +81,6 @@ const sprite = () => {
 
 const html = () => {
   return gulp.src("source/*.html")
-    .pipe(posthtml([
-      include()
-    ]))
   .pipe(htmlmin({collapseWhitespace: true}))
   .pipe(gulp.dest("build"));
 }
@@ -136,6 +133,10 @@ const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
   gulp.watch("source/*.html").on("change", sync.reload);
 }
+
+exports.build = gulp.series(
+  clean, copy, styles, html
+);
 
 exports.default = gulp.series(
   styles, server, watcher
