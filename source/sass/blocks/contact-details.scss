@@ -27,16 +27,14 @@
   }
 }
 
-.contact-details__field {
+.contact-details input {
   margin-left: 10px;
-  padding-right: 30px;
+  padding-left: 12px;
+  padding-right: 35px;
 
   @media (min-width: $tablet-width) {
     margin-left: 17px;
-  }
-
-  @media (min-width: $desktop-width) {
-    margin-left: 18px;
+    padding-left: 18px;
   }
 
   &:focus + .contact-details__link,
@@ -59,8 +57,13 @@
   height: 14px;
   left: auto;
   right: 15px;
-  top: 18px;
+  top: 16px;
   color: inherit;
+
+  @media (min-width: $tablet-width) {
+    width: 22px;
+    top: 18px;
+  }
 
   @media (min-width: $desktop-width) {
     right: 18px;
