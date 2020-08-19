@@ -108,5 +108,5 @@ exports.copy = copy;
 exports.clean = clean;
 exports.server = server;
 
-exports.build = gulp.series(clean, copy, styles, images, createWebp, minHTML, minifyJS);
-exports.default = gulp.series(clean, copy, styles, images, createWebp, minHTML, minifyJS, server, watcher);
+exports.build = gulp.series(clean, copy, styles, images, sprite, createWebp, minHTML, minifyJS);
+exports.default = gulp.series(clean, copy, styles, images, sprite, createWebp, minHTML, minifyJS, server, watcher);
