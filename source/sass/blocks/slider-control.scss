@@ -14,7 +14,7 @@
   text-transform: uppercase;
   color: #000000;
   border: none;
-  background-color: #EAEAEA;
+  background-color: #eaeaea;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -35,14 +35,14 @@
   width: 84px;
   height: 14px;
   top: 6px;
-  border: 1px solid #CDCDCD;
+  border: 1px solid #cdcdcd;
   border-radius: 6px;
 
   @media (min-width: $tablet-width) {
     width: 428px;
     height: 6px;
     top: 11px;
-    background-color: #DCDCDC;
+    background-color: #dcdcdc;
   }
 }
 
@@ -53,7 +53,7 @@
   top: 3px;
   left: 6px;
   border-radius: 6px;
-  background: #68B738;
+  background: #68b738;
   border: none;
 
   @media (min-width: $tablet-width) {
@@ -63,26 +63,24 @@
     left: 46%;
     border-radius: 50%;
     background-color: #ffffff;
-    border: 1px solid #CDCDCD;
-    box-shadow: (0px 1px 3px rgba(0, 0, 0, 0.16));
+    border: 1px solid #cdcdcd;
+    box-shadow: (0 1px 3px rgba(0, 0, 0, 0.16));
   }
 
   &:hover,
   &:focus {
     @media (min-width: $tablet-width) {
-      box-shadow: (0px 2px 4px rgba(0, 0, 0, 0.19));
+      box-shadow: (0 2px 4px rgba(0, 0, 0, 0.19));
       outline: none;
     }
   }
 
   &:active {
     @media (min-width: $tablet-width) {
-      border: 1px solid #68B738;
-      box-shadow: (0px 3px 5px rgba(0, 0, 0, 0.2));
+      border: 1px solid #68b738;
+      box-shadow: (0 3px 5px rgba(0, 0, 0, 0.2));
     }
   }
-
-
 
   &::before {
     @media (min-width: $tablet-width) {
@@ -94,7 +92,7 @@
       top: 13px;
       left: 37%;
       border-radius: 50%;
-      background: #68B738;
+      background: #68b738;
       z-index: 1;
     }
   }

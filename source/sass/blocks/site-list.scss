@@ -1,7 +1,6 @@
 .site-list {
-  margin: 0;
-  padding: 0;
   margin: 0 -20px;
+  padding: 0;
   list-style: none;
 
   @media (min-width: $tablet-width) {
@@ -29,7 +28,7 @@
   margin: 0;
   padding: 20px 0;
   text-align: center;
-  border-top: 1px solid #E6E6E6;
+  border-top: 1px solid #e6e6e6;
 
   @media (min-width: $tablet-width) {
     padding: 43px 0 7px;
@@ -37,11 +36,11 @@
   }
 
   @media (min-width: $desktop-width) {
-    padding: 0px 0 9px;
+    padding: 0 0 9px;
   }
 
   &:last-child {
-    border-bottom: 1px solid #E6E6E6;
+    border-bottom: 1px solid #e6e6e6;
 
     @media (min-width: $tablet-width) {
       border: none;
@@ -79,17 +78,17 @@
 }
 
 .site-list__item a[href] {
-    @media (min-width: $tablet-width) {
-      &:hover,
-      &:focus {
-        opacity: 60%;
-      }
+  @media (min-width: $tablet-width) {
+    &:hover,
+    &:focus {
+      opacity: 60%;
+    }
 
-      &:active {
-        opacity: 30%;
-      }
+    &:active {
+      opacity: 30%;
     }
   }
+}
 
 .site-list--main a {
   @media (min-width: $desktop-width) {

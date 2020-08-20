@@ -1,6 +1,6 @@
 .story {
   position: relative;
-  background-color: #EAEAEA;
+  background-color: #eaeaea;
   padding-top: 28px;
   min-height: 705px;
 
@@ -9,7 +9,7 @@
     padding-top: 44px;
     min-height: 1082px;
     background-color: #ffffff;
-    border-top: 1px solid #E6E6E6;
+    border-top: 1px solid #e6e6e6;
     z-index: 1;
   }
 
@@ -20,7 +20,7 @@
     border: none;
   }
 
-  &:after {
+  &::after {
     @media (min-width: $tablet-width) {
       content: "";
       display: block;
@@ -29,7 +29,7 @@
       min-height: 462px;
       bottom: 0;
       left: 0;
-      background: #EAEAEA;
+      background: #eaeaea;
       z-index: -1;
     }
   }
