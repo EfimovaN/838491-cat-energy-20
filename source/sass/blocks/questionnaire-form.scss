@@ -124,6 +124,7 @@
   color: #444444;
   border: 1px solid #e7e7e7;
   outline: none;
+   
 
   &:hover {
     border: 1px solid #cdcdcd;
@@ -134,8 +135,12 @@
     border: 2px solid #444444;
   }
 
-  &:invalid {
+  &:focus:invalid {
     border: 2px solid #ff8282;
+  }
+
+  &:focus:valid:required {
+    border: 2px solid #444444;
   }
 
   @media (min-width: $tablet-width) {

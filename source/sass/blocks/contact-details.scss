@@ -37,14 +37,14 @@
     margin-left: 17px;
     padding-left: 18px;
   }
-
-  &:focus + .contact-details__link,
-  &:active + .contact-details__link {
-    color: #68b738;
+ 
+  &:focus:invalid + .contact-details__link {
+    color: #ff8282;
   }
 
-  &:invalid + .contact-details__link {
-    color: #ff8282;
+  &:focus:valid + .contact-details__link,
+  &:active:valid + .contact-details__link {
+    color: #68b738;
   }
 }
 
