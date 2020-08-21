@@ -35,8 +35,10 @@ const images = () => {
     imagemin([
     imagemin.optipng({optimizationLevel: 3}),
     imagemin.mozjpeg({progressive: true}),
-    imagemin.svgo()])
-  )
+    imagemin.svgo({
+      plugins: [{mergePaths: false}]
+    })
+  ]))
   .pipe(gulp.dest("build/img"));
 };
 
@@ -96,6 +98,7 @@ const server = (done) => {
 const watcher = () => {
   gulp.watch("source/sass/**/*.scss", gulp.series("styles"));
   gulp.watch("source/*.html", gulp.series("minHTML"));
+  gulp.watch("source/js/*.js", gulp.series("minifyJS"));
 };
 
 exports.styles = styles;

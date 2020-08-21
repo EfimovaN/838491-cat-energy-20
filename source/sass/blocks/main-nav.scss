@@ -36,7 +36,7 @@
   box-shadow: 0 8px 0 0 #000000, 0 16px 0 0 #000000;
 }
 
-.main-nav--closed .site-list__item {
+.main-nav--closed .main-nav__wrapper {
   @media (max-width: $mobile-width-only) {
     display: none;
   }
@@ -54,9 +54,14 @@
   background-repeat: no-repeat;
 }
 
-
 .main-nav--nojs .main-nav__toggle {
   @media (max-width: $mobile-width-only) {
     display: none;
+  }
+}
+
+.main-nav--nojs .main-nav__wrapper {
+  @media (max-width: $mobile-width-only) {
+    display: block;
   }
 }
