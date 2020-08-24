@@ -33,7 +33,7 @@ const images = () => {
   return gulp.src("source/img/**/*.{jpg,png,svg}")
   .pipe(
     imagemin([
-    // imagemin.optipng({optimizationLevel: 3}),
+    imagemin.optipng({optimizationLevel: 3}),
     imagemin.mozjpeg({progressive: true}),
     imagemin.svgo({
       plugins: [{mergePaths: false}]
