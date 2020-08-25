@@ -1,21 +1,22 @@
 .more-product {
-  padding: 65px 0 24px;
+  position: relative;
+  padding: 65px 20px 24px;
   text-align: center;
 
   @media (min-width: $tablet-width) {
-    padding: 161px 37px 25px;
+    padding: 207px 37px 25px;
     width: 324px;
     min-height: 429px;
-    border: 1px solid #d9d9d9;
+    
   }
 
   @media (min-width: $desktop-width) {
+    padding: 212px 37px 25px;
     width: 245px;
   }
 }
 
 .more-product__title {
-  position: relative;
   margin: 15px 0 8px;
   font: inherit;
   font-size: 16px;
@@ -36,16 +37,21 @@
     position: absolute;
     width: 30px;
     height: 30px;
-    top: -54px;
-    left: 125px;
+    top: 27px;
+    left: 145px;
     background-image: url("../img/icon-plus.svg");
     background-repeat: no-repeat;
 
     @media (min-width: $tablet-width) {
       width: 60px;
       height: 60px;
-      top: -109px;
-      left: 37px;
+      top: 97px;
+      left: 132px;
+    }
+
+    @media (min-width: $desktop-width) {
+      top: 102px;
+      left: 93px;
     }
   }
 }

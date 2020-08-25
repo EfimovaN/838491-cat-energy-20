@@ -57,12 +57,12 @@
 
     @media (min-width: $tablet-width) {
       border: none;
-      padding: 80px 0 0;
     }
 
     &::after {
       @media (min-width: $tablet-width) {
-        display: none;
+        background-color:transparent;
+        border: 1px solid #f2f2f2;
       }
     }
   }
@@ -71,7 +71,7 @@
     @media (min-width: $desktop-width) {
       margin-right: 0;
     }
-  }
+  }  
 }
 
 .catalog-list__wrapper {
@@ -174,18 +174,6 @@
   }
 }
 
-.catalog__more-product {
+.catalog-list__more-product {
   margin: 0 -20px;
-
-  @media (min-width: $tablet-width) {
-    margin: 0;
-    position: relative;
-    top: -490px;
-    left: 384px;
-  }
-
-  @media (min-width: $desktop-width) {
-    top: -491px;
-    left: 976px;
-  }
 }
