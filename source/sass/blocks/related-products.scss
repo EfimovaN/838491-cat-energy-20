@@ -1,10 +1,11 @@
 .related-products {
-  padding-top: 5px;
+  padding-top: 28px;
   padding-bottom: 35px;
   overflow: hidden;
 
 
   @media (min-width: $tablet-width) {
+    padding-top: 5px;
     margin: 1px 0 41px;
   }
 
@@ -32,7 +33,7 @@
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
-    line-height: 20px;
+    line-height: 24px;
   }
 
   &--main {
@@ -95,6 +96,12 @@
   }
 }
 
+.related-products__item .related-products__title {
+  @media (min-width: $tablet-width) {
+    padding: 10px 20px 10px 0;
+  }
+}
+
 .related-products__list {
   margin: 34px 0 39px;
   padding: 0;
@@ -152,7 +159,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 12px;
+    margin-bottom: 9px;
   }
 
   @media (min-width: $desktop-width) {
@@ -172,6 +179,10 @@
   font-family: "Arial", sans-serif;
 
   @media (min-width: $tablet-width) {
+    display: flex;
+    justify-content: space-between;
+    flex-shrink: 0;
+    width: 240px;
     font-size: 16px;
     line-height: 20px;
   }
@@ -182,15 +193,28 @@
   }
 }
 
-.related-products__value {
+.related-products__field {
   @media (min-width: $tablet-width) {
-    margin-left: 50px;
+    width: 148px;
+    padding-top: 3px;
+    text-align: right;
   }
 
   @media (min-width: $desktop-width) {
-    margin: 0;
-    width: 45px;
-    text-align: start;
+    text-align: left;
+  }
+}
+
+.related-products__value {
+  @media (min-width: $tablet-width) {
+    text-align: right;
+    width: 70px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 5px;
+    padding-left: 25px;
+    text-align: left;
   }
 }
 

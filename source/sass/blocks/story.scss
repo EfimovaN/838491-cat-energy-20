@@ -5,7 +5,7 @@
   min-height: 705px;
 
   @media (min-width: $tablet-width) {
-    margin-top: -31px;
+    margin: 0;
     padding-top: 44px;
     min-height: 1082px;
     background-color: #ffffff;
@@ -14,9 +14,8 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin: 19px 0 0;
     padding: 0;
-    min-height: 608px;
+    min-height: 621px;
     border: none;
   }
 
@@ -43,8 +42,10 @@
 }
 
 .story__wrapper {
+  padding: 0 0 33px;
+
   @media (min-width: $desktop-width) {
-    padding-top: 11px;
+    padding: 24px 0 65px;
   }
 }
 
@@ -67,7 +68,7 @@
 }
 
 .story__stats {
-  margin: 24px 0 33px;
+  margin: 24px 0 0;
 
   @media (min-width: $tablet-width) {
     margin: 53px 0 0;
@@ -75,5 +76,11 @@
 
   @media (min-width: $desktop-width) {
     margin: 68px 0 0;
+  }
+}
+
+.story__slider {
+  @media (min-width: $desktop-width) {
+    margin: 13px 0 0;
   }
 }

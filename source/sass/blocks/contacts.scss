@@ -84,6 +84,7 @@
   height: 0;
 
   min-height: 362px;
+  background-color: #ededee;
   background-image: url("../img/map-pin.png"),
     url("../img/bg-map-mobile@1x.png");
   background-repeat: no-repeat;
@@ -112,4 +113,5 @@
   height: 100%;
   width: 100%;
   position: absolute;
+  border: 0;
 }
