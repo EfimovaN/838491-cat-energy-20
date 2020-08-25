@@ -2,7 +2,7 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
-    margin: 51px 0 0 16px;
+    margin: 18px 0 0 16px;
   }
 
   @media (min-width: $desktop-width) {
@@ -60,11 +60,13 @@
 }
 
 .story-slider__control {
-  margin: 26px auto 15px;
+  margin: 26px auto 0;
+  padding-bottom: 15px;
   width: 205px;
 
   @media (min-width: $tablet-width) {
-    margin: 12px auto 15px;
+    margin: 12px auto 0;
+    padding-bottom: 65px;
     width: 570px;
   }
 
