@@ -29,9 +29,11 @@
 
 .advantages__item {
   position: relative;
+  margin-bottom: 26px;
   padding-left: 80px;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 0;
     margin-right: 84px;
     padding: 113px 40px 0 0;
     width: 300px;
