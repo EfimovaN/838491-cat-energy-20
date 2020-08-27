@@ -1,4 +1,6 @@
 .program-item {
+  display: flex;
+  flex-direction: column;
   position: relative;
   margin-bottom: 20px;
   padding: 30px 20px 17px;
@@ -7,22 +9,22 @@
   @media (min-width: $tablet-width) {
     min-height: 372px;
     margin-bottom: 30px;
-    padding: 76px 280px 52px 52px;
+    padding: 76px 280px 56px 52px;
   }
 
   @media (min-width: $desktop-width) {
     width: 570px;
     min-height: 374px;
-    padding: 76px 52px 52px 52px;
+    padding: 76px 52px 58px 52px;
   }
 
   &:last-child {
     @media (min-width: $tablet-width) {
-      padding: 76px 315px 52px 52px;
+      padding: 76px 315px 56px 52px;
     }
 
     @media (min-width: $desktop-width) {
-      padding: 76px 52px 52px 52px;
+      padding: 76px 52px 58px 52px;
     }
   }
 }
@@ -31,7 +33,7 @@
   position: relative;
   margin: 0;
   margin-left: 71px;
-  margin-bottom: 30px;
+  margin-bottom: 16px;
   font: inherit;
   color: #000000;
   font-size: 24px;
@@ -149,6 +151,7 @@
 }
 
 .program-item__link {
+  margin-top: auto;
   position: relative;
   font: inherit;
   font-size: 16px;
