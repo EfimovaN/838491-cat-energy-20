@@ -6,7 +6,7 @@
   @media (min-width: $tablet-width) {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     margin: 34px 0 40px;
     width: 440px;
   }
@@ -32,12 +32,19 @@
   border-top: 1px solid #e6e6e6;
 
   @media (min-width: $tablet-width) {
+    margin-right: 35px;
     padding: 7px 0 7px;
     border: none;
   }
 
   @media (min-width: $desktop-width) {
     padding: 9px 0 9px;
+  }
+
+  &:nth-child(3n) {
+    @media (min-width: $tablet-width) {
+      margin-right: 0;
+    }
   }
 
   &:last-child {
