@@ -25,18 +25,6 @@
     @media (min-width: $tablet-width) {
       display: none;
     }
-
-    @media (min-width: $desktop-width) {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 50%;
-      min-height: 694px;
-      top: -1px;
-      right: 0;
-      background-color: #65a93c;
-      z-index: -3;
-    }
   }
 }
 
