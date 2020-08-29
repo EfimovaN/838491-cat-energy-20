@@ -8,13 +8,15 @@
     flex-wrap: wrap;
     justify-content: flex-start;
     margin: 34px 0 40px;
-    width: 440px;
+    width: 475px;
+    margin-right: -35px;
   }
 
   @media (min-width: $desktop-width) {
+    width: 515px;
     position: relative;
     margin: 63px 0 34px;
-    width: 478px;
+    margin-right: -35px;
     z-index: 2;
   }
 }
@@ -41,11 +43,11 @@
     padding: 9px 0 9px;
   }
 
-  &:nth-child(3n) {
-    @media (min-width: $tablet-width) {
-      margin-right: 0;
-    }
-  }
+  // &:nth-child(3n) {
+  //   @media (min-width: $tablet-width) {
+  //     margin-right: 0;
+  //   }
+  // }
 
   &:last-child {
     border-bottom: 1px solid #e6e6e6;
