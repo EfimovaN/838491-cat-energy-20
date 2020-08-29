@@ -8,7 +8,7 @@
     margin: 0;
     padding-top: 44px;
     min-height: 1082px;
-    background-color: #eaeaea;
+    background-color: #ffffff;
     border-top: 1px solid #e6e6e6;
     z-index: 1;
   }
@@ -25,10 +25,10 @@
       display: block;
       position: absolute;
       width: 100%;
-      min-height: 619px;
-      top: 0;
+      min-height: 462px;
+      bottom: 0;
       left: 0;
-      background: #ffffff;
+      background: #eaeaea;
       z-index: -1;
     }
   }
@@ -47,6 +47,7 @@
   @media (min-width: $desktop-width) {
     padding: 24px 0 65px;
   }
+
 }
 
 .story__description {
